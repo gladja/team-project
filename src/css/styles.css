@@ -18,18 +18,53 @@
 
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --color-white: #fff;
+  --color-dark-green: #1E2827;
+  --color-black: #141414;
+  --color-black-05: #14141480; /* rgba(20, 20, 20, 0.5);*/
+  --color-black-04: #14141466; /* rgba(20, 20, 20, 0.4);*/
+  --color-card: #ffffff80; /* rgba(255, 255, 255, 0.5);*/
+  --color-border: #ffffff1a; /* rgba(255, 255, 255, 0.1);*/
+  --color-copyright: #C6CDD1;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/*global container*/
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid tomato;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .container {
+    width: 1176px;
+  }
+}
