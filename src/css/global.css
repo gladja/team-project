@@ -16,7 +16,7 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
 }
 
 .section {
