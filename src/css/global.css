@@ -39,7 +39,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
   .container {
     padding-left: 32px;
     padding-right: 32px;
@@ -59,5 +58,19 @@ body {
 
   .section {
     padding-bottom: 80px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25em;
+  color: var(--color-dark-green);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 40px;
+    line-height: 1.1em;
   }
 }
