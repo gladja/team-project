@@ -1,0 +1,63 @@
+:root {
+  --color-bg: #FBFBFB; /*background color */
+  --color-white: #fff;
+  --color-dark-green: #1E2827;
+  --color-black: #141414;
+  --color-black-05: #14141480; /* rgba(20, 20, 20, 0.5);*/
+  --color-black-04: #14141466; /* rgba(20, 20, 20, 0.4);*/
+  --color-card: #ffffff80; /* rgba(255, 255, 255, 0.5);*/
+  --color-border: #ffffff1a; /* rgba(255, 255, 255, 0.1);*/
+  --color-copyright: #C6CDD1;
+
+
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.section {
+  padding-bottom: 40px;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*outline: 1px solid tomato;*/
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 704px;
+  }
+
+  .section {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .container {
+    width: 1176px;
+  }
+
+  .section {
+    padding-bottom: 80px;
+  }
+}
