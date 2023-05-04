@@ -1,1 +1,112 @@
+.header-container-mob {
+    display: flex;
+    background-color: #141414;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 29px;
+}
+.header-container {
+    display: none;
+    background-color: #141414;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.logo_header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.header_list-mob {
+    display: none;
+}
+.svg_header {
+    fill: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+}
+.header_logo_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+.header-list {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+.btn_menu {
+    width: 24px;
+    height: 24px;
+    background-color: #141414;
+    border: 0px;
+}
+.svg_menu {
+    fill: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_tel {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.33;
+    color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+    .header-container-mob {
+        display: none;
+    }
+    .header-container {
+        display: flex;
+    }
+    .svg_header {
+        width: 19px;
+        height: 19px;
+    }
+    .logo_text {
+        font-size: 12px;
+        line-height: 1;
+    }
+    .header_list {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin-left: 80px;
+    }
+    .header-text {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 1.33;
+        font-style: normal;
+    }
+    .btn_header {
+        width: 159px;
+        height: 48px;
+        background: #1E2827;
+        border: 0px;
+        border-radius: 8px;
+        margin-left: auto;
+    }
+}
 
+@media screen and (min-width: 1280px) {
+    .logo-text {
+        font-size: 15px;
+        line-height: 1;
+    }
+    .header-text {
+        font-size: 9px;
+        line-height: 0.75;
+    }
+}

@@ -55,7 +55,9 @@ body {
 @media screen and (min-width: 1280px) {
 
   .container {
-    width: 1176px;
+    padding-left: 52px;
+    padding-right: 52px;
+    width: 1280px;
   }
 
   .section {
