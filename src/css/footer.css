@@ -1,0 +1,144 @@
+.footer-logo {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.footer-tel {
+  width: 136px;
+  height: 18px;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+.footer-maps {
+  width: 141px;
+  height: 54px;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--color-white);
+}
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer-container-positions {
+  position: relative;
+}
+
+.footer-navigation-text {
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 1.28;
+}
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  width: 148px;
+}
+.footer-social {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.footer-last-text {
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--color-copyright);
+}
+.footer-margin {
+  margin-right: 14px;
+}
+.footer-about-margin {
+  margin-bottom: 14px;
+}
+
+/* -------------------------------------------------- */
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 704px;
+  }
+  .footer-container {
+    background-color: var(--color-dark-green);
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .footer-logo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+  .footer-tel {
+    margin-bottom: 27px;
+  }
+  .footer-containers {
+    display: flex;
+    gap: 142px;
+  }
+  .footer-positions {
+    min-width: 81px;
+    max-height: 108px;
+  }
+  .footer-socials {
+    width: 164px;
+    height: 44px;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    background-color: var(--color-dark-green);
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .footer-positions {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+  }
+  .footer-social-container {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1176px;
+    padding-left: 132px;
+    padding-right: 132px;
+  }
+  .footer-container {
+    background-color: var(--color-dark-green);
+    padding-top: 104px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
