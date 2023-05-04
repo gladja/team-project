@@ -107,9 +107,11 @@
         font-weight: 400;
         font-size: 9px;
         line-height: 1.33;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 }
-
 @media screen and (min-width: 1280px) {
     .logo-text {
         font-size: 15px;
