@@ -69,9 +69,9 @@
 @media screen and (min-width: 375px) {
   .catalog {
   }
-  .catalog-container {
-    width: 375px;
-  }
+  /*.catalog-container {*/
+  /*  width: 375px;*/
+  /*}*/
   .catalog-title {
     margin-bottom: 40px;
     font-size: 32px;
@@ -119,9 +119,9 @@
 }
 /*==========Tablet=========*/
 @media screen and (min-width: 768px) {
-  .catalog-container {
-    width: 768px;
-  }
+  /*.catalog-container {*/
+  /*  width: 768px;*/
+  /*}*/
 
   .catalog-title {
     font-size: 40px;
@@ -142,9 +142,9 @@
 
 /*==========Desktop=========*/
 @media screen and (min-width: 1280px) {
-  .catalog-container {
-    width: 1240px;
-  }
+  /*.catalog-container {*/
+  /*  width: 1280px;*/
+  /*}*/
 
   .catalog-title {
     margin-bottom: 64px;
