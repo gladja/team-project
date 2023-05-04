@@ -1,0 +1,123 @@
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--color-black-05);
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+
+    width: 335px;
+    height: 1080px;
+    padding: 40px 20px;
+
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05), 0px 0px 130.6px rgba(0, 0, 0, 0.037963), 0px 0px 71.0296px rgba(0, 0, 0, 0.0303704), 0px 0px 36.2375px rgba(0, 0, 0, 0.025), 0px 0px 18.1704px rgba(0, 0, 0, 0.0196296), 0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
+}
+
+@media screen and (max-width: 374px) {
+    .modal {
+        min-width: 335px;
+        max-width: 375px;
+    }
+}
+
+.temp {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.modal-form {
+    margin-top: 40px;
+}
+
+.form-field:not(:first-child) {
+    margin-top: 18px;
+}
+
+.form-label {
+    color: var(--color-black);
+}
+
+.form-input {
+    display: block;
+    width: 295px;
+    height: 42px;
+    border: 1px solid var(--color-black-05);
+    padding: 12px 16px;
+    margin-top: 12px;
+
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.form-input::placeholder {
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--color-black-05);
+}
+
+.form-textarea {
+    height: 170px;
+    resize: none;
+}
+
+.modal-btn {
+    width: 295px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.17;
+
+    background-color: var(--color-dark-green);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.text-temp-primary {
+    margin-top: 40px;
+}
+
+.text-temp-secondary {
+    margin-top: 12px;
+}
