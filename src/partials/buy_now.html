@@ -1,7 +1,15 @@
 <div class="modal-backdrop">
   <div class="modal">
     <div class="modal-column">
-      <span class="temp">X</span>
+      <button
+        class="modal-close-btn"
+        type="button"
+        aria-label="Close modal window"
+      >
+        <svg class="modal-close-icon" width="20" height="20">
+          <use href="../img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
       <img
         srcset="
           ../img/buy_now/watch-1-276.jpg    1x,
@@ -14,8 +22,10 @@
         height="274"
         class="modal-img"
       />
-      <p class="text-temp-primary">Tube Watch S42 Date Steel With Black Case</p>
-      <p>€395</p>
+      <p class="catalog-description modal-text">
+        Tube Watch S42 Date Steel With Black Case
+      </p>
+      <p class="catalog-price modal-price">€395</p>
     </div>
     <div class="modal-column">
       <form name="modal-form" class="modal-form">
@@ -68,9 +78,10 @@
         </div>
         <button class="modal-btn" type="submit">submit</button>
       </form>
-      <p class="text-temp-secondary">
-        By clicking on “Submit” button, you agree to our Privacy Policy, and
-        allow Promodo to use this information for marketing purposes.
+      <p class="catalog-price privacy-text">
+        By clicking on “Submit” button, you agree to our
+        <a class="privacy-link">Privacy Policy</a>, and allow Promodo to use
+        this information for marketing purposes.
       </p>
     </div>
   </div>
