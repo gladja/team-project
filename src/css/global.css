@@ -34,7 +34,7 @@ body {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 335px;
+    width: 375px;
   }
 }
 
@@ -42,7 +42,7 @@ body {
   .container {
     padding-left: 32px;
     padding-right: 32px;
-    width: 704px;
+    width: 768px;
   }
 
   .section {
