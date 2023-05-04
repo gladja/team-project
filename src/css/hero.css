@@ -1,4 +1,8 @@
 
+.container {
+    margin: 0;
+}
+
 .hero {
     padding-top: 70px;
     background-color: var(--color-black);
@@ -18,10 +22,10 @@
 .swiper {
     width: 266px;
     height: 200px;
+    margin-left: 0;
     margin-bottom: 20px;
-    
+     
 }
-
 
 .hero-img {
     background-color: var(--color-dark-green);
@@ -30,12 +34,14 @@
 
 .hero-nomber {
     position: absolute;
-    top: 10;
+    right: 0;
     display: flex;
     justify-content: end;
     column-gap: 6px;
     color: var(--color-white);
     line-height: 1.29;
+    overflow: visible;
+    z-index: 1000;
 }
 
 .swiper-nomber {
@@ -78,7 +84,7 @@ background-color: var(--color-white);
 }
 
 .hero-icon {
-    fill: white;
+    fill: var(--color-white);
     
 }
 .hero-text {
@@ -96,27 +102,49 @@ background-color: var(--color-white);
 
 .hero {
     padding-top: 80px;
+    
 }
 
 .hero-title {
     width: 653px;
     font-size: 60px;
     line-height: 1.03;
+    position: relative;
 }
 
-.swiper {
+.swiper, .mySwiper, .swiper-wrapper {
     width: 436px;
     height: 255px;
-    
+    margin: 0;
+    position: relative;
+    }
+
+.hero-foto {
+    width: 348px;
+    height: 233px;
+    margin: auto;
 }
 
-.swiper,swiper-container {
-margin-left: 0;
+.hero-nomber {
+    position: absolute;
 }
 
-.swiper-wrapper {
-    display: flex;
+.hero-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-text {
+  
+   
+}
+
+.hero-watches-img {
+    width: 704px;
+    height: 410px;
+    margin-left: auto;
+    margin-right: auto;
 }
 }
 
-@media screen and (min-width: 1280px)
+@media screen and (min-width: 1280px){}
