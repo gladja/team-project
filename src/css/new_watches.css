@@ -1,0 +1,28 @@
+.new-watches {
+  background-color: var(--color-white);
+}
+
+.new-watches-title {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.06em;
+  color: rgba(20, 20, 20, 0.4);
+  margin-bottom: 8px;
+}
+
+.new-watches-subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #141414;
+  margin-bottom: 40px;
+}
+
+.new-watches-item:first-child {
+  margin-bottom: 40px;
+}
+
+.new-watches-item:last-child {
+  margin-bottom: 80px;
+}
