@@ -12,7 +12,7 @@
         href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'>
   
   <script type="module" crossorigin src="/team-project/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/team-project/assets/index-19b907ac.css">
+  <link rel="stylesheet" href="/team-project/assets/index-f78bc422.css">
 </head>
 <body>
 <header>
@@ -330,9 +330,95 @@
   </div>
 </footer>
 
-<div>
-  buy_now modal
+<div class="modal-backdrop">
+  <div class="modal">
+    <div class="modal-column">
+      <button
+        class="modal-close-btn"
+        type="button"
+        aria-label="Close modal window"
+      >
+        <svg class="modal-close-icon" width="20" height="20">
+          <use href="../img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <img
+        srcset="
+          ../img/buy_now/watch-1-276.jpg    1x,
+          ../img/buy_now/watch-1-276@2x.jpg 2x,
+          ../img/buy_now/watch-1-276@3x.jpg 3x
+        "
+        src="../img/buy_now/watch-1.jpg"
+        alt="Tube Watch S42"
+        width="276"
+        height="274"
+        class="modal-img"
+      />
+      <p class="catalog-description modal-text">
+        Tube Watch S42 Date Steel With Black Case
+      </p>
+      <p class="catalog-price modal-price">€395</p>
+    </div>
+    <div class="modal-column">
+      <form name="modal-form" class="modal-form">
+        <div class="form-field" role="group" aria-labelledby="name input">
+          <label class="form-label">
+            Full name
+            <input
+              type="text"
+              name="name"
+              class="form-input"
+              placeholder="Enter your full name"
+            />
+          </label>
+        </div>
+        <div class="form-field" role="group" aria-labelledby="email input">
+          <label class="form-label">
+            Email
+            <input
+              type="email"
+              name="name"
+              class="form-input"
+              placeholder="Enter your email"
+            />
+          </label>
+        </div>
+        <div
+          class="form-field"
+          role="group"
+          aria-labelledby="card number input"
+        >
+          <label class="form-label">
+            Card number
+            <input
+              type="number"
+              name="name"
+              class="form-input"
+              placeholder="Enter card"
+            />
+          </label>
+        </div>
+        <div class="form-field" role="group" aria-labelledby="comments input">
+          <label class="form-label">
+            Comments
+            <textarea
+              name="comment"
+              class="form-input form-textarea"
+              placeholder="Enter your text"
+            ></textarea>
+          </label>
+        </div>
+        <button class="modal-btn" type="submit">submit</button>
+      </form>
+      <p class="catalog-price privacy-text">
+        By clicking on “Submit” button, you agree to our
+        <a class="privacy-link">Privacy Policy</a>, and allow Promodo to use
+        this information for marketing purposes.
+      </p>
+    </div>
+  </div>
 </div>
+
 <div>
   burger_menu modal
 </div>
