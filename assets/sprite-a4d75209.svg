@@ -1,7 +1,10 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <symbol id="icon-arrow" viewBox="0 0 32 32">
-      <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.333" d="m12 24 8-8-8-8"/>
+    <symbol id="icon-prev" viewBox="0 0 32 32">
+    <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M20 24l-8-8 8-8"></path>
+    </symbol>
+    <symbol id="icon-next" viewBox="0 0 32 32">
+    <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7778" d="M12 24l8-8-8-8"></path>
     </symbol>
     <symbol id="icon-heart" viewBox="0 0 32 32">
       <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M27.787 6.147a7.326 7.326 0 0 0-10.373 0L16.001 7.56l-1.413-1.413a7.333 7.333 0 0 0-10.374 0 7.333 7.333 0 0 0 0 10.374l11.787 11.787 11.787-11.787a7.345 7.345 0 0 0 2.15-5.187 7.33 7.33 0 0 0-2.15-5.187v0z"/>

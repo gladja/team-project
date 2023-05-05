@@ -8,8 +8,9 @@
   <link rel='stylesheet'
         href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'>
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script type="module" crossorigin src="/team-project/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/team-project/assets/index-c5f8252c.css">
+  <link rel="stylesheet" href="/team-project/assets/index-f361f375.css">
 </head>
 <body>
 <header>
@@ -50,16 +51,88 @@
     </ul>
     <button class="btn-menu" type="button" aria-expanded="false">
       <svg class="svg-menu" width="20" height="14">
-        <use href="/team-project/assets/sprite-af07e9e7.svg#icon-burger"></use>
+        <use href="/team-project/assets/sprite-a4d75209.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
 </header>
 </header>
 <main>
-  <section class=''>
+  <section class='section hero'>
   <div class='container'>
-    hero
+    
+        <h1 class="hero-title">Welcome to our collection of premium watches</h1>
+      
+        <div class="swiper mySwiper swiper-horizontal">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hero-img">
+              <img class="hero-foto" 
+              srcset="../img/hero/mobile/tablet1-1x.png 1x, ../img/hero/mobile/tablet1-2x.png 2x"  
+              src="../img/hero/mobile/watches1-1x.png" alt="watches" width="266" height="190">
+              <p class="hero-nomber"> <span class="swiper-nomber">01</span> 05</p>
+            </div>
+            <div class="swiper-slide hero-img">
+              <img class="hero-foto" 
+              srcset="../img/hero/mobile/tablet2-1x.png 1x, ../img/hero/mobile/tablet2-2x.png 2x"
+              src="../img/hero/mobile/watches2-1x.png" alt="watches" width="266" height="190">
+              <p class="hero-nomber"> <span class="swiper-nomber">02</span> 05</p>
+            </div>
+            <div class="swiper-slide hero-img">
+              <img class="hero-foto" 
+              srcset="../img/hero/mobile/tablet3-1x.png 1x, ../img/hero/mobile/tablet3-2x.png 2x"
+              src="../img/hero/mobile/watches3-1x.png" alt="watches" width="266" height="190">
+              <p class="hero-nomber"> <span class="swiper-nomber">03</span> 05</p>
+            </div>
+            <div class="swiper-slide hero-img">
+              <img class="hero-foto" 
+              srcset="../img/hero/mobile/tablet4-1x.png 1x, ../img/hero/mobile/tablet4-2x.png 2x"
+              src="../img/hero/mobile/watches4-1x.png" alt="watches" width="266" height="190">
+              <p class="hero-nomber"> <span class="swiper-nomber">04</span> 05</p>
+            </div>
+            <div class="swiper-slide hero-img">
+              <img class="hero-foto" 
+              srcset="../img/hero/mobile/tablet5-1x.png 1x, ../img/hero/mobile/tablet5-2x.png 2x" 
+              src="../img/hero/mobile/watches5-1x.png" alt="watches" width="266" height="190">
+              <p class="hero-nomber"> <span class="swiper-nomber">05</span> 05</p>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-buttons">
+        <div class="button-prev">
+          <button class="hero-btn" type="button">
+            <svg class="hero-icon" width="18" height="18">
+              <use href="../img/sprite.svg#icon-prev"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="button-next">
+          <button class="hero-btn" type="button">
+            <svg class="hero-icon" width="18" height="18">
+              <use href="../img/sprite.svg#icon-next"></use>
+            </svg>
+          </button>   
+      </div>
+      </div>
+  <p class="hero-text">Our watches are not just timepieces, but also an expression of your personality and lifestyle.
+    From classic designs to
+    modern ones, we have a watch to suit every taste and occasion.</p>
+    <picture>
+      <source 
+      srcset="../img/hero/desctop-1x.jpg 1x, ../img/hero/desctop-2x.jpg 2x"
+      media="(min-width: 1280px)"
+      >
+      <source
+      srcset="../img/hero/tablet-1x.jpg 1x, ../img/hero/tablet-2x.jpg 2x"
+      media="(min-width: 768px)"
+      >
+      <source
+      srcset="../img/hero/mobile-1x.jpg 1x, ../img/hero/mobile-2x.jpg 2x"
+      media="(max-width: 767px)"
+      >   
+      <img class="hero-watches-img" src="../img/hero/tablet-1x.jpg" alt="watches" width="345" height="410">
+    </picture>
+        
   </div>
 </section>
   <section class='section bg' id="about-us" >
@@ -528,7 +601,7 @@
           <li>
             <a href="https://uk-ua.facebook.com/" class="footer-social" target="_blank">
               <svg class="" width="24" height="24">
-                <use href="/team-project/assets/sprite-af07e9e7.svg#icon-facebook"></use>
+                <use href="/team-project/assets/sprite-a4d75209.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -536,7 +609,7 @@
           <li>
             <a href="https://www.instagram.com/" class="footer-social" target="_blank">
               <svg class="" width="24" height="24">
-                <use href="/team-project/assets/sprite-af07e9e7.svg#icon-instagram"></use>
+                <use href="/team-project/assets/sprite-a4d75209.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -544,7 +617,7 @@
           <li>
             <a href="https://www.youtube.com/" class="footer-social" target="_blank">
               <svg class="" width="24" height="24">
-                <use href="/team-project/assets/sprite-af07e9e7.svg#icon-youtube"></use>
+                <use href="/team-project/assets/sprite-a4d75209.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -588,7 +661,7 @@
         aria-label="Close modal window"
       >
         <svg class="modal-close-icon" width="20" height="20">
-          <use href="/team-project/assets/sprite-af07e9e7.svg#icon-close"></use>
+          <use href="/team-project/assets/sprite-a4d75209.svg#icon-close"></use>
         </svg>
       </button>
       <img
@@ -798,6 +871,20 @@
 </div>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    keyboard: {
+      enabled: true,
+    },
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+  });
+</script>
 </body>
 </html>
