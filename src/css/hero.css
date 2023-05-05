@@ -1,0 +1,150 @@
+
+.container {
+    margin: 0;
+}
+
+.hero {
+    padding-top: 70px;
+    background-color: var(--color-black);
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--color-white);
+    width: 335px;
+    margin-bottom: 60px;
+}
+
+
+.swiper {
+    width: 266px;
+    height: 200px;
+    margin-left: 0;
+    margin-bottom: 20px;
+     
+}
+
+.hero-img {
+    background-color: var(--color-dark-green);
+    
+}
+
+.hero-nomber {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    column-gap: 6px;
+    color: var(--color-white);
+    line-height: 1.29;
+    overflow: visible;
+    z-index: 1000;
+}
+
+.swiper-nomber {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.swiper-nomber::after {
+content: "";
+display: block;
+width: 32px;
+height: 1px;
+margin-left: 6px;
+background-color: var(--color-white);
+
+}
+
+.swiper-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    padding: 7px;
+    background-color: var(--color-black);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    border: 1px solid #FFFFFF;
+}
+
+.hero-icon {
+    fill: var(--color-white);
+    
+}
+.hero-text {
+    font-weight: 300;
+    line-height: 1.29;
+    color: var(--color-white);
+    width: 248px;
+    margin-left: 67px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px){}
+
+@media screen and (min-width: 768px) {
+
+.hero {
+    padding-top: 80px;
+    
+}
+
+.hero-title {
+    width: 653px;
+    font-size: 60px;
+    line-height: 1.03;
+    position: relative;
+}
+
+.swiper, .mySwiper, .swiper-wrapper {
+    width: 436px;
+    height: 255px;
+    margin: 0;
+    position: relative;
+    }
+
+.hero-foto {
+    width: 348px;
+    height: 233px;
+    margin: auto;
+}
+
+.hero-nomber {
+    position: absolute;
+}
+
+.hero-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-text {
+  
+   
+}
+
+.hero-watches-img {
+    width: 704px;
+    height: 410px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (min-width: 1280px){}
