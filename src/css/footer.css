@@ -69,17 +69,9 @@
 /* -------------------------------------------------- */
 
 @media screen and (min-width: 375px) {
-  .container {
-    width: 335px;
-  }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 704px;
-  }
   .footer-container {
     background-color: var(--color-dark-green);
     padding-top: 80px;
@@ -129,11 +121,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1176px;
-    padding-left: 132px;
-    padding-right: 132px;
-  }
   .footer-container {
     background-color: var(--color-dark-green);
     padding-top: 104px;
