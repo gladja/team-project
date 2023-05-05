@@ -1,7 +1,5 @@
 
-.container {
-    margin: 0;
-}
+
 
 .hero {
     padding-top: 70px;
@@ -52,12 +50,12 @@
 }
 
 .swiper-nomber::after {
-content: "";
-display: block;
-width: 32px;
-height: 1px;
-margin-left: 6px;
-background-color: var(--color-white);
+    content: "";
+    display: block;
+    width: 32px;
+    height: 1px;
+    margin-left: 6px;
+    background-color: var(--color-white);
 
 }
 
