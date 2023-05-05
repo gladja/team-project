@@ -9,7 +9,9 @@ img{
   .section-sale {
     padding-top: 40px;
     padding-bottom: 80px;
+    background-color: var(--color-bg);
   }
+  
   .sale-titel {
     font-weight: 600;
     font-size: 32px;
@@ -186,9 +188,7 @@ img{
   }
   @media screen and (min-width: 1280px) {
   
-    .section-sale{
-      background-color: #EFEFEF;
-    }
+    
     .section-sale {
       padding-top: 80px;
       padding-bottom: 80px;
