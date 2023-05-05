@@ -1,5 +1,4 @@
 .new-watches {
-  /* background-color: var(--color-white); */
   background: #efefef;
 }
 
@@ -13,7 +12,7 @@
 }
 
 .new-watches-subtitle {
-  color: #141414;
+  color: var(--color-black);
   margin-bottom: 40px;
   letter-spacing: -0.02em;
 }
@@ -21,10 +20,6 @@
 .new-watches-item:first-child {
   margin-bottom: 20px;
 }
-
-/* .new-watches-item:last-child {
-  margin-bottom: 80px;
-} */
 
 @media screen and (min-width: 375px) {
 }
@@ -51,5 +46,9 @@
 
   .new-watches-list {
     gap: 24px;
+  }
+
+  .new-watches {
+    background-color: var(--color-white);
   }
 }
