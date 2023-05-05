@@ -12,6 +12,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Epilogue', sans-serif;
   font-size: 14px;
