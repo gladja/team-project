@@ -1,14 +1,15 @@
+.header {
+    background-color: #141414;
+}
 .header-container-mob {
     display: flex;
-    background-color: #141414;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-top: 29px;
 }
 .header-container {
-    display: none;
-    background-color: #141414;
+    display: none;    
     flex-direction: row;
     align-items: center;
     padding-top: 20px;
@@ -92,9 +93,6 @@
         line-height: 1.33;
         font-style: normal;
         text-transform: uppercase;
-    }
-    .header-text:hover {
-        color: tomato;
     }
     .btn_header {
         width: 159px;
