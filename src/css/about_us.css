@@ -65,6 +65,7 @@
 
   .about-list {
     gap: 40px;
+    margin-right: 33px;
   }
 
   .about-item {
