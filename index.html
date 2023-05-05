@@ -12,7 +12,7 @@
         href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'>
   
   <script type="module" crossorigin src="/team-project/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/team-project/assets/index-bd575040.css">
+  <link rel="stylesheet" href="/team-project/assets/index-5d89600c.css">
 </head>
 <body>
 <header>
@@ -315,29 +315,49 @@
 
   <section class="section new-watches">
   <div class="container">
-    <h2 class="new-watches-title title">New watches</h2>
+    <h2 class="new-watches-title">New watches</h2>
     <h3 class="new-watches-subtitle title">
       Green And Bronze—The Match Made In Heaven
     </h3>
-
     <ul class="new-watches-list list">
       <li class="new-watches-item">
-        <img
-          srcset="../img/new_watches/hand-watches-2x.jpg 2x"
-          src="../img/new_watches/hand-watches.jpg"
-          alt="Hand watches"
-          width="335"
-          height="260"
-        />
+        <picture>
+          <source
+            srcset="/team-project/assets/hand-watches-des-3a31617e.jpg , /team-project/assets/hand-watches-des-2x-4f7304ec.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="/team-project/assets/hand-watches-tab-d3fa48ee.jpg , /team-project/assets/hand-watches-tab-2x-9905aed0.jpg 2x"
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="/team-project/assets/hand-watches-694a49ee.jpg , /team-project/assets/hand-watches-2x-9846b03d.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/team-project/assets/hand-watches-694a49ee.jpg" alt="Hand watches" />
+        </picture>
       </li>
       <li class="new-watches-item">
-        <img
-          srcset="../img/new_watches/watches-2x.jpg 2x"
-          src="../img/new_watches/watches.jpg"
-          alt=""
-          width="335"
-          height="260"
-        />
+        <picture>
+          <source
+            srcset="/team-project/assets/watches-des-ec36aed8.jpg , /team-project/assets/watches-des-2x-fa0363aa.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="/team-project/assets/watches-tab-7d098f86.jpg , /team-project/assets/watches-tab-2x-32a3f61b.jpg 2x"
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="/team-project/assets/watches-7cc974ef.jpg , /team-project/assets/watches-2x-52ed176e.jpg 2x"
+            media="(max-width: 767px)"
+          />
+
+          <img src="/team-project/assets/watches-7cc974ef.jpg" alt="Watches" />
+        </picture>
       </li>
     </ul>
   </div>
