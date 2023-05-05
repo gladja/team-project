@@ -9,7 +9,7 @@
         href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'>
   
   <script type="module" crossorigin src="/team-project/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/team-project/assets/index-3b7b2f33.css">
+  <link rel="stylesheet" href="/team-project/assets/index-99edfcd0.css">
 </head>
 <body>
 <header>
@@ -470,7 +470,7 @@
         class="modal-img"
       />
       <p class="catalog-description modal-text">
-        Tube Watch S42 Date Steel With Black Case
+        Tube Watch S42 Date Steel With Black...
       </p>
       <p class="catalog-price modal-price">€395</p>
     </div>
@@ -484,6 +484,8 @@
               name="name"
               class="form-input"
               placeholder="Enter your full name"
+              pattern="[A-Za-z]{2,20} [A-Za-z]{2,20}"
+              required
             />
           </label>
         </div>
@@ -495,6 +497,8 @@
               name="name"
               class="form-input"
               placeholder="Enter your email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
             />
           </label>
         </div>
@@ -510,6 +514,9 @@
               name="name"
               class="form-input"
               placeholder="Enter card"
+              pattern="[0-9]{16}"
+              maxlength="16"
+              required
             />
           </label>
         </div>
