@@ -3,9 +3,7 @@ img{
 }
 
 @media screen and (min-width: 375px) {
-    .container {
-      width: 375px;
-    }
+
   }
   
   .section-sale {
@@ -17,7 +15,7 @@ img{
     font-size: 32px;
     line-height: calc(40 / 32);
     letter-spacing: -0.02em;
-    color: #141414;
+    color: var(--color-black);
     margin-bottom: 40px;
   }
   
@@ -36,31 +34,17 @@ img{
   }
   
   .picture {
-    background-image: url(/img/sale/images/bg/bgs-mobl-1x.jpg);
-    width: 80px;
-    height: 80px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background:var(--color-black);
+  width: 80px;
+  height: 80px;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .picture {
-      background-image: url(/img/sale/images/bg/bgs-mobl-2x.jpg);
-    }
-  }
+  
   .sale-bg-big {
-    background-image: url(/img/sale/images/bg/bgb-mobl-1x.jpg);
+    background:var(--color-black);
     width: 235px;
     height: 350px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .sale-bg-big {
-      background-image: url(/img/sale/images/bg/bgb-mobl-2x.jpg);
-    }
-  }
+  
   .sale-big-img {
     display: block;
     margin: 0 auto;
@@ -80,7 +64,7 @@ img{
     font-size: 24px;
     line-height: calc(24 / 24);
     letter-spacing: -0.02em;
-    color: #141414;
+    color: var(--color-black);
     margin-bottom: 8px;
   }
   .sale-producy {
@@ -88,7 +72,7 @@ img{
     font-size: 14px;
     line-height: calc(18 / 14);
     letter-spacing: -0.02em;
-    color: rgba(20, 20, 20, 0.5);
+    color: var(--color-black-05);
     margin-bottom: 16px;
   }
   .value-sale {
@@ -96,7 +80,7 @@ img{
     font-size: 18px;
     line-height: calc(24 / 18);
     letter-spacing: -0.02em;
-    color: #141414;
+    color: var(--color-black);
     margin-right: 8px;
   }
   .value-full-price {
@@ -106,13 +90,13 @@ img{
     line-height: calc(14 / 12);
     letter-spacing: -0.02em;
     text-decoration-line: line-through;
-    color: rgba(20, 20, 20, 0.5);
+    color: var(--color-black-05);
   }
   .price-mrp {
     margin-bottom: 40px;
   }
   .liniya {
-    border-top: 1px solid #141414;
+    border-top: 1px solid var(--color-black);
     margin-bottom: 8px;
   }
   .sale-description {
@@ -121,7 +105,7 @@ img{
     line-height: calc(24 / 18);
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #141414;
+    color: var(--color-black);
     margin-bottom: 17px;
     position: relative;
   }
@@ -129,7 +113,7 @@ img{
     content: "";
     width: 16px;
     height: 1px;
-    background-color: #141414;
+    background-color: var(--color-black);
     display: inline-block;
     position: absolute;
     right: 0;
@@ -141,7 +125,7 @@ img{
     font-size: 14px;
     line-height: calc(18 / 14);
     letter-spacing: -0.01em;
-    color: rgba(20, 20, 20, 0.5);
+    color: var(--color-black-05);
     margin-bottom: 40px;
   }
   .description-functional:last-child {
@@ -149,12 +133,8 @@ img{
   }
   
   @media screen and (min-width: 768px) {
-    .container {
-      width: 768px;
-    }
-    .container {
-      padding: 0 32px;
-    }
+   
+    
     .section-sale {
       padding-top: 128px;
       padding-bottom: 128px;
@@ -162,7 +142,7 @@ img{
     .sale-titel {
       font-size: 40px;
       line-height: calc(44 / 40);
-      color: #1E2827;
+      color: var(--color-dark-green);
       margin-bottom: 40px;
     }
     .sale-tabl-infor {
@@ -177,25 +157,16 @@ img{
       list-style: none;
     }
     .picture {
-      background-image: url(/img/sale/images/bg/bgs-tab-1x.jpg);
       width: 146px;
       height: 146px;
     }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .picture {
-        background-image: url(/img/sale/images/bg/bgs-tab-2x.jpg);
-      }
-    }
+    
     .sale-bg-big {
-      background-image: url(/img/sale/images/bg/bgb-tab-1x.jpg);
+    
       width: 406px;
       height: 614px;
     }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .sale-bg-big {
-        background-image: url(/img/sale/images/bg/bgb-tab-2x.jpg);
-      }
-    }
+    
     .sale-big-img {
       width: 406px;
     }
@@ -215,9 +186,6 @@ img{
   }
   @media screen and (min-width: 1280px) {
   
-    .container {
-      width: 1176px;
-    }
     .section-sale{
       background-color: #EFEFEF;
     }
@@ -235,24 +203,7 @@ img{
     .sale-tabl-infor {
       padding: 0 97px;
     }
-    .picture {
-      background-image: url(/img/sale/images/bg/bgs-1x.jpg);
-      
-    }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .picture {
-        background-image: url(/img/sale/images/bg/bgs-2x.jpg);
-      }
-    }
-    .sale-bg-big {
-      background-image: url(/img/sale/images/bg/bgb-1x.jpg);
-      
-    }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .sale-bg-big {
-        background-image: url(/img/sale/images/bg/bgb-2x.jpg);
-      }
-    }
+    
     .sale-watch-img-one {
       width: 102px;
       
