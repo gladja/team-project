@@ -1,18 +1,21 @@
+.header {
+    background-color: #141414;
+}
 .header-container-mob {
     display: flex;
-    background-color: #141414;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-top: 29px;
 }
 .header-container {
-    display: none;
-    background-color: #141414;
+    display: none;    
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding-top: 20px;
+}
+.nav {
+    display: flex;
 }
 .logo_header {
     display: flex;
@@ -89,17 +92,24 @@
         font-size: 9px;
         line-height: 1.33;
         font-style: normal;
+        text-transform: uppercase;
     }
     .btn_header {
         width: 159px;
         height: 48px;
-        background: #1E2827;
+        background-color: #1E2827;
         border: 0px;
         border-radius: 8px;
         margin-left: auto;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 1.33;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 }
-
 @media screen and (min-width: 1280px) {
     .logo-text {
         font-size: 15px;
