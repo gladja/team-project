@@ -1,5 +1,5 @@
 .new-watches {
-  background: #efefef;
+  background-color: var(--color-bg);
 }
 
 .new-watches-title {
@@ -37,6 +37,9 @@
     display: flex;
     gap: 20px;
   }
+  .new-watches-item:first-child {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -50,5 +53,9 @@
 
   .new-watches {
     background-color: var(--color-white);
+  }
+
+  .new-watches-item:first-child {
+    margin-bottom: 0px;
   }
 }
