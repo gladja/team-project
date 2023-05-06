@@ -17,8 +17,7 @@ import { selectItem } from '/js/modal';
 // @ts-ignore
 import { addEventListener } from '/js/modal';
 
+// //? Добавляет обработчик события на каждый элемент списка при  загрузке страницы
 addEventListener();
 
-modalRefs.open?.addEventListener('click', toggleModal);
 modalRefs.close?.addEventListener('click', toggleModal);
-

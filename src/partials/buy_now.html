@@ -9,10 +9,10 @@
         <use href="/img/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <div class="modal-column"></div>
+    <div class="modal-column first-column"></div>
     <div class="modal-column">
       <form name="modal-form" class="modal-form">
-        <div class="form-field" role="group" aria-labelledby="name input">
+        <div class="form-field" role="group">
           <label class="form-label">
             Full name
             <input
@@ -25,12 +25,12 @@
             />
           </label>
         </div>
-        <div class="form-field" role="group" aria-labelledby="email input">
+        <div class="form-field" role="group">
           <label class="form-label">
             Email
             <input
               type="email"
-              name="name"
+              name="email"
               class="form-input"
               placeholder="Enter your email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -38,16 +38,12 @@
             />
           </label>
         </div>
-        <div
-          class="form-field"
-          role="group"
-          aria-labelledby="card number input"
-        >
+        <div class="form-field" role="group">
           <label class="form-label">
             Card number
             <input
-              type="number"
-              name="name"
+              type="text"
+              name="card"
               class="form-input"
               placeholder="Enter card"
               pattern="[0-9]{16}"
@@ -56,7 +52,7 @@
             />
           </label>
         </div>
-        <div class="form-field" role="group" aria-labelledby="comments input">
+        <div class="form-field" role="group">
           <label class="form-label">
             Comments
             <textarea
