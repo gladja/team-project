@@ -55,20 +55,9 @@
   line-height: calc(18px / 14px);
   text-transform: uppercase;
   color: var(--color-white);
-  /* letter-spacing: -0.02em; */
 }
-
-/** Tablet */
 
 @media screen and (min-width: 768px) {
-  .mobile-menu {
-    width: 40vw;
-  }
-}
-
-/* Menu is hidden on desktop */
-
-@media screen and (min-width: 1280px) {
   .mobile-menu {
     display: none;
   }

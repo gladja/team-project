@@ -9,6 +9,22 @@
   row-gap: 40px;
 }
 
+/* !!!! */
+.catalog-item {
+  transition-duration: 300ms;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.catalog-price {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.166;
+  letter-spacing: -0.02em;
+  color: var(--color-black-05);
+}
+
 .catalog-item:nth-child(n + 9) {
   display: none;
 }
@@ -16,9 +32,29 @@
   margin-bottom: 40px;
 }
 
+/* !!! */
+.catalog-require {
+  display: block;
+  margin-top: 12px;
+
+  font-size: 12px;
+  line-height: calc(14px / 12px);
+  color: var(--color-dark-green);
+  text-align: center;
+
+  transition-duration: 300ms;
+  user-select: none;
+}
+
+/* !!!! */
+.buy-wrap {
+  max-width: 108px;
+  margin-left: auto;
+}
+
 .catalog-content {
   overflow: hidden;
-  padding-top: 14px;
+  margin-top: 14px;
 }
 .catalog-description {
   text-overflow: ellipsis;
@@ -26,18 +62,49 @@
   overflow: hidden;
 }
 
+/* !!! */
+.selected {
+  box-shadow: 0 0 5px 0 var(--color-dark-green);
+}
+
 .catalog-btn {
-  display: block;
-  margin-left: auto;
-  padding: 14px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 108px;
+  height: 42px;
+  padding: 0;
+
   background-color: var(--color-dark-green);
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: none;
+
+  font-size: 12px;
+  line-height: 1.166;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-white);
+  white-space: nowrap;
+
+  transition-duration: 300ms;
 }
-.catalog-btn:hover,
-.catalog-btn:focus {
-  border: 1px solid var(--color-white);
+.catalog-btn:is(:hover, :focus) {
+  box-shadow: inset 10rem 0 0 0 rgba(255, 255, 255, .3)
 }
+
+/* !!! */
+.catalog-btn:disabled {
+  background-color: grey;
+  color: var(--color-white);
+  cursor: default;
+}
+
+/* !!!!! */
+.catalog-btn:disabled:is(:hover, :focus) {
+  box-shadow: none;
+}
+
+/* ! Это не надо, удали сам */
 .catalog-btn-text {
   font-size: 12px;
   line-height: 1.166;
@@ -65,7 +132,7 @@
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-#catalog-link:is(:hover, :focus) .catalog-overlay {
+.catalog-item:is(:hover, :focus) .catalog-overlay {
   transform: translateY(0);
 }
 
@@ -164,13 +231,6 @@
     letter-spacing: -0.02em;
     color: var(--color-black);
   }
-  .catalog-price {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.166;
-    letter-spacing: -0.02em;
-    color: var(--color-black-05);
-  }
   .catalog-btn {
   }
 }
@@ -194,10 +254,15 @@
   }
 
   .catalog-btn {
-    padding: 18px 35px;
+    width: 122px;
+    height: 50px;
   }
   .catalog-overlay {
     padding: 40px 60px 40px 40px;
+  }
+
+  .buy-wrap {
+    max-width: 122px;
   }
 }
 
