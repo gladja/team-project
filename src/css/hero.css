@@ -17,10 +17,10 @@
 }
 
 
-.swiper {
+.mySwiper {
     width: 266px;
     height: 200px;
-    margin-left: 0;
+    margin-left: 0 !important;
     margin-bottom: 20px;
      
 }
@@ -103,6 +103,13 @@
     
 }
 
+.page-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .hero-title {
     width: 653px;
     font-size: 60px;
@@ -110,10 +117,9 @@
     position: relative;
 }
 
-.swiper, .mySwiper, .swiper-wrapper {
+.mySwiper {
     width: 436px;
     height: 255px;
-    margin: 0;
     position: relative;
     }
 
@@ -133,7 +139,7 @@
 }
 
 .hero-text {
-  
+  margin-left: 20px;
    
 }
 
@@ -143,6 +149,56 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.hero-wrap {
+    order: 1;
 }
 
-@media screen and (min-width: 1280px){}
+.swiper-page-wrap {
+    order: 2;
+}
+
+.hero-wpap-text {
+    order: 3;
+}
+
+  .hero-wrap-img {
+      order: 4;
+  }
+
+}
+
+@media screen and (min-width: 1280px){
+
+    .hero-wrap {
+        order: 1;
+    }
+
+    .swiper-page-wrap {
+        order: 3;
+    }
+
+    .hero-wpap-text {
+        order: 2;
+    }
+
+    .hero-wrap-img {
+        order: 4;
+        margin-left: 64px;
+    }
+
+    .hero-title{
+        width: 750px;
+    }
+
+    .hero-text {
+        width: 282px;
+        margin-left: 144px;
+    }
+
+    .hero-watches-img {
+        width: 676px;
+        height: 394px;
+    }
+
+}
