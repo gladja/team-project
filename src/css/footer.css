@@ -74,16 +74,16 @@
 
 .footer-svg-color:hover,
 .footer-svg-color:focus {
-  fill: #8b4513;
-  border-color: #8b4513;
+  fill: var(--color-card);
+  border-color: var(--color-card);
 }
 
 .footer-hover:hover,
 .footer-hover:focus {
-  color: #8b4513;
+  color: var(--color-card);
 }
 .footer-social:focus .footer-svg-color {
-  fill: #8b4513;
+  fill: var(--color-card);
 }
 
 /* -------------------------------------------------- */
