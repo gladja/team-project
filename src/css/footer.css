@@ -16,6 +16,7 @@
   line-height: 1.28;
   color: var(--color-white);
   margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-maps {
   width: 141px;
@@ -23,6 +24,7 @@
   font-size: 14px;
   line-height: 1.28;
   color: var(--color-white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-navigation {
   display: flex;
@@ -37,6 +39,7 @@
   color: var(--color-white);
   font-size: 14px;
   line-height: 1.28;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials {
   display: flex;
@@ -51,6 +54,7 @@
   justify-content: center;
   height: 40px;
   width: 40px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-last-text {
@@ -61,11 +65,24 @@
 .footer-margin {
   margin-right: 14px;
 }
+.footer-use-color {
+  fill: white;
+}
+.footer-svg-colo {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-svg-color:hover,
+.footer-svg-color:focus {
+  fill: #8b4513;
+}
+
+.footer-hover:hover,
+.footer-hover:focus {
+  color: #8b4513;
+}
 
 /* -------------------------------------------------- */
-
-@media screen and (min-width: 375px) {
-}
 
 @media screen and (min-width: 768px) {
   .footer-container {
@@ -90,7 +107,6 @@
   }
   .footer-socials {
     width: 164px;
-    height: 44px;
     gap: 16px;
   }
   .footer-social {
@@ -129,7 +145,8 @@
   }
   .footer-position-container {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
+    /* gap: 200px; */
   }
 }
 
