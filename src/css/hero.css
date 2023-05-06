@@ -17,13 +17,18 @@
 }
 
 .mySwiper {
-    width: 266px;
-    margin-left: 0 !important;
+    width: 100%;
+    margin-left: 0;
     margin-bottom: 20px;     
 }
 
 .hero-img {
     background-color: var(--color-dark-green);   
+}
+
+.hero-watches-img {
+    width: 100%;
+    height: auto;
 }
 
 .hero-foto {
@@ -33,12 +38,13 @@
 .hero-nomber {
     position: absolute;
     right: 0;
+    bottom: 0;
     display: flex;
     justify-content: end;
     column-gap: 6px;
     color: var(--color-white);
     line-height: 1.29;
-    overflow: visible;
+    
 }
 
 .swiper-nomber {
@@ -96,12 +102,11 @@
     margin-left: 67px;
     margin-bottom: 40px;
 }
-
-@media screen and (max-width: 767px){
-
-
+@media screen and (min-width: 375px){
+.mySwiper {
+width: 266px;
+    }
 }
-
 @media screen and (min-width: 768px) {
 
 .hero {
@@ -131,10 +136,6 @@
     width: 348px;
     height: 233px;
     margin: 11px 44px;
-}
-
-.hero-nomber {
-    position: absolute;
 }
 
 .hero-icon {
@@ -169,7 +170,6 @@
 .hero-wrap-img {
     order: 4;
 }
-
 }
 
 @media screen and (min-width: 1280px){
