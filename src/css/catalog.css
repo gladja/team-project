@@ -9,7 +9,7 @@
   row-gap: 40px;
 }
 
-.catalog-item:nth-child(-n + 4) {
+.catalog-item:nth-child(n + 9) {
   display: none;
 }
 .catalog-title {
@@ -18,6 +18,7 @@
 
 .catalog-content {
   overflow: hidden;
+  padding-top: 14px;
 }
 .catalog-description {
   text-overflow: ellipsis;
@@ -45,6 +46,51 @@
   color: var(--color-white);
 }
 
+/*==========Catalog overlay=========*/
+.catalog-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.catalog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 40px 59px 41px 40px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: var(--color-dark-green);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#catalog-link:is(:hover, :focus) .catalog-overlay {
+  transform: translateY(0);
+}
+
+.catalog-overlay-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.285;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+.catalog-overlay-text {
+  /* white-space: pre-wrap; */
+  max-width: 162px;
+  font-size: 14px;
+  line-height: 1.285;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: var(--color-card);
+}
+.catalog-overlay-title + p {
+  margin-bottom: 14px;
+}
+
 @media screen and (max-width: 374px) {
   /* .catalog-container {
     width: 100%;
@@ -53,7 +99,7 @@
   .catalog-thumb {
     display: block;
     width: 100%;
-    padding: 24px 15px;
+    padding: 24px 0;
   }
   .catalog-img {
     width: 100%;
@@ -63,6 +109,17 @@
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .catalog-overlay {
+    padding: 20px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  .catalog-overlay-title {
+    font-size: 12px;
+  }
+  .catalog-overlay-text {
+    font-size: 12px;
   }
 }
 
@@ -135,8 +192,12 @@
   .catalog-item {
     width: 336px;
   }
+
   .catalog-btn {
     padding: 18px 35px;
+  }
+  .catalog-overlay {
+    padding: 40px 60px 40px 40px;
   }
 }
 
@@ -157,7 +218,17 @@
   .catalog-item {
     width: 276px;
   }
-  .catalog-item:nth-child(-n + 4) {
+
+  .catalog-thumb {
+    padding: 0;
+    padding: 26px 0px;
+  }
+
+  .catalog-item:nth-child(n + 9) {
     display: block;
+  }
+
+  .catalog-overlay {
+    padding: 20px;
   }
 }
