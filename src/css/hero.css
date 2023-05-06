@@ -16,18 +16,18 @@
     margin-bottom: 60px;
 }
 
-
 .mySwiper {
     width: 266px;
-    height: 200px;
     margin-left: 0 !important;
-    margin-bottom: 20px;
-     
+    margin-bottom: 20px;     
 }
 
 .hero-img {
-    background-color: var(--color-dark-green);
-    
+    background-color: var(--color-dark-green);   
+}
+
+.hero-foto {
+    margin: 5px 20px;
 }
 
 .hero-nomber {
@@ -39,7 +39,6 @@
     color: var(--color-white);
     line-height: 1.29;
     overflow: visible;
-    z-index: 1000;
 }
 
 .swiper-nomber {
@@ -82,9 +81,13 @@
 }
 
 .hero-icon {
-    fill: var(--color-white);
-    
+    fill: var(--color-white);  
 }
+
+.icon {    
+    transform: rotateY(180deg);
+}
+
 .hero-text {
     font-weight: 300;
     line-height: 1.29;
@@ -94,13 +97,15 @@
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 767px){}
+@media screen and (max-width: 767px){
+
+
+}
 
 @media screen and (min-width: 768px) {
 
 .hero {
-    padding-top: 80px;
-    
+    padding-top: 80px;   
 }
 
 .page-wrap {
@@ -119,14 +124,13 @@
 
 .mySwiper {
     width: 436px;
-    height: 255px;
     position: relative;
     }
 
 .hero-foto {
     width: 348px;
     height: 233px;
-    margin: auto;
+    margin: 11px 44px;
 }
 
 .hero-nomber {
@@ -162,43 +166,43 @@
     order: 3;
 }
 
-  .hero-wrap-img {
-      order: 4;
-  }
+.hero-wrap-img {
+    order: 4;
+}
 
 }
 
 @media screen and (min-width: 1280px){
 
-    .hero-wrap {
-        order: 1;
-    }
+.hero-wrap {
+    order: 1;
+}
 
-    .swiper-page-wrap {
-        order: 3;
-    }
+.swiper-page-wrap {
+    order: 3;
+}
 
-    .hero-wpap-text {
-        order: 2;
-    }
+.hero-wpap-text {
+    order: 2;
+}
 
-    .hero-wrap-img {
-        order: 4;
-        margin-left: 64px;
-    }
+.hero-wrap-img {
+    order: 4;
+    margin-left: 64px;
+}
 
-    .hero-title{
-        width: 750px;
-    }
+.hero-title{
+    width: 750px;
+}
 
-    .hero-text {
-        width: 282px;
-        margin-left: 144px;
-    }
+.hero-text {
+    width: 282px;
+    margin-left: 144px;
+}
 
-    .hero-watches-img {
-        width: 676px;
-        height: 394px;
-    }
+.hero-watches-img {
+    width: 676px;
+    height: 394px;
+}
 
 }
