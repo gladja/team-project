@@ -75,11 +75,15 @@
 .footer-svg-color:hover,
 .footer-svg-color:focus {
   fill: #8b4513;
+  border-color: #8b4513;
 }
 
 .footer-hover:hover,
 .footer-hover:focus {
   color: #8b4513;
+}
+.footer-social:focus .footer-svg-color {
+  fill: #8b4513;
 }
 
 /* -------------------------------------------------- */
