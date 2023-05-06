@@ -135,6 +135,7 @@
   .catalog-item {
     width: 336px;
   }
+
   .catalog-btn {
     padding: 18px 35px;
   }
@@ -156,6 +157,11 @@
   }
   .catalog-item {
     width: 276px;
+  }
+
+  .catalog-thumb {
+    padding-top: 26px;
+    padding-bottom: 25px;
   }
   .catalog-item:nth-child(-n + 4) {
     display: block;
