@@ -21,3 +21,4 @@ addEventListener();
 
 modalRefs.open?.addEventListener('click', toggleModal);
 modalRefs.close?.addEventListener('click', toggleModal);
+

@@ -1,15 +1,13 @@
 :root {
-  --color-bg: #FBFBFB; /*background color */
+  --color-bg: #fbfbfb; /*background color */
   --color-white: #fff;
-  --color-dark-green: #1E2827;
+  --color-dark-green: #1e2827;
   --color-black: #141414;
   --color-black-05: #14141480; /* rgba(20, 20, 20, 0.5);*/
   --color-black-04: #14141466; /* rgba(20, 20, 20, 0.4);*/
   --color-card: #ffffff80; /* rgba(255, 255, 255, 0.5);*/
   --color-border: #ffffff1a; /* rgba(255, 255, 255, 0.1);*/
-  --color-copyright: #C6CDD1;
-
-
+  --color-copyright: #c6cdd1;
 }
 
 html {
@@ -57,7 +55,6 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-
   .container {
     padding-left: 52px;
     padding-right: 52px;
