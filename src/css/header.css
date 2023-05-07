@@ -85,10 +85,6 @@
         width: 19px;
         height: 19px;
     }
-    .logo-text {
-        font-size: 12px;
-        line-height: 1;
-    }
     .header-list {
         display: flex;
         gap: 40px;
@@ -108,19 +104,9 @@
         background-size: 0 100%, 100% 100%;
         border-radius: 4px;
         transition: 300ms;
-        /* text-decoration: none;
-            background: no-repeat 0 100%;
-            background-image: linear-gradient(currentColor, currentColor);
-            background-size: 0% 2px;
-            transition: background-size .3s ease;
-            border-radius: 2px; */
     }
-    /* .header-text:hover {
-        background-size: 100% 2px;
-    } */
     .header-text:hover {
-        background-size: 100% 100%, 100% 100%;
-        
+        background-size: 100% 100%, 100% 100%;        
     }
     .btn-header {
         width: 159px;
@@ -143,7 +129,7 @@
     }
 }
 @media screen and (min-width: 1280px) {
-    .logo-text {
+    .header-logo-text {
         font-size: 15px;
         line-height: 1;
     }
