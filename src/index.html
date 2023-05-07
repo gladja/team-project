@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8' />
-  <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <title>The Watch Spot</title>
-  <link rel='stylesheet'
-        href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel='stylesheet' href='./css/styles.css' />
-</head>
-<body>
-<header>
-  <load ="partials/header.html" />
-</header>
-<main>
-  <load ="partials/hero.html" />
-  <load ="partials/about_us.html" />
-  <load ="partials/catalog.html" />
-  <load ="partials/new_watches.html" />
-  <load ="partials/sale.html" />
-</main>
-<load ="partials/footer.html" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Watch Spot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <load ="partials/header.html" />
+    </header>
+    <main>
+      <load ="partials/hero.html" />
+      <load ="partials/about_us.html" />
+      <load ="partials/catalog.html" />
+      <load ="partials/new_watches.html" />
+      <load ="partials/sale.html" />
+    </main>
+    <load ="partials/footer.html" />
 
-<load ="partials/buy_now.html" />
-<load ="partials/burger_menu.html" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script type='module' src='./main.js'></script>
-</body>
+    <load ="partials/buy_now.html" />
+    <load ="partials/burger_menu.html" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
