@@ -177,6 +177,10 @@
     
 }
 
+.page-wrap {
+    align-items: end;
+}
+
 .hero-watches-img {
     width: 676px;
     height: 394px;
