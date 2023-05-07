@@ -15,6 +15,7 @@
   cursor: pointer;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  border-bottom: 1px solid transparent;
 }
 
 .catalog-price {
@@ -34,20 +35,6 @@
 
 .catalog-img {
   margin: 0 auto;
-}
-
-/* !!! */
-.catalog-require {
-  display: block;
-  margin-top: 12px;
-
-  font-size: 12px;
-  line-height: calc(14px / 12px);
-  color: var(--color-dark-green);
-  text-align: center;
-
-  transition-duration: 300ms;
-  user-select: none;
 }
 
 /* !!!! */
@@ -75,7 +62,7 @@
 
 /* !!! */
 .selected {
-  box-shadow: 0 0 5px 0 var(--color-dark-green);
+    box-shadow: 0px 2px 0 0 var(--color-black-04);
 }
 
 .catalog-btn {

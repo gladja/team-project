@@ -37,8 +37,6 @@ export function selectItem(item) {
 
   // @ts-ignore
   modalRefs.open?.removeAttribute('disabled');
-  // @ts-ignore
-  document.querySelector('.catalog-require').style.opacity = '0';
 }
 
 //? Открыть/Закрыть модалку
