@@ -32,6 +32,10 @@
   margin-bottom: 40px;
 }
 
+.catalog-img {
+  margin: 0 auto;
+}
+
 /* !!! */
 .catalog-require {
   display: block;

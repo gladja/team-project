@@ -73,11 +73,25 @@
 }
 
 .modal-close-icon {
+    width: 20px;
+    height: 20px;
+
     stroke: var(--color-black);
 }
 
 .modal-column {
     max-width: 295px;
+}
+
+.added-watch {
+    max-width: 335px;
+}
+
+@media screen and (max-width: 374px) {
+    .modal-column {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .modal-thumb {
@@ -125,23 +139,9 @@
     transition-duration: 300ms;
 }
 
-@media screen and (max-width: 374px) {
-    .modal-column {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-}
-
-.form-input:invalid:focus {
+.form-input:invalid:not(:placeholder-shown) {
     border-color: transparent;
     outline: 1px solid red;
-}
-
-.form-input::-webkit-outer-spin-button,
-.form-input::-webkit-inner-spin-button {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
 }
 
 .form-input::placeholder {
@@ -200,6 +200,7 @@
 .privacy-link {
     font-family: 'Plus Jakarta Sans', sans-serif;
     text-decoration: underline;
+    color: var(--color-black-05);
 }
 
 /** ---------------TABLET------------------ */
@@ -215,7 +216,7 @@
         width: 750px;
         height: 670px;
         display: flex;
-        gap: 20px;
+        justify-content: space-between;
         padding: 40px;
     }
 

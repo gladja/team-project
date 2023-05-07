@@ -7,11 +7,12 @@ export const modalRefs = {
 };
 
 export const catalogRefs = {
+  list: document.querySelector('.catalog-list'),
   items: document.querySelectorAll('.catalog-item'),
   requireText: document.querySelector('.catalog-require'),
 };
 
-//? Выбор элемента из списка часов и вставка в модалку
+// //? Выбор элемента из списка часов и вставка в модалку
 export function selectItem() {
   const items = document.querySelectorAll('.catalog-item');
   let selectedItem = null;
@@ -22,7 +23,14 @@ export function selectItem() {
       item.classList.add('selected');
       selectedItem = document.createElement('div');
       selectedItem.innerHTML = item.innerHTML;
-      selectedItem.classList.add('modal-column');
+      selectedItem.classList.add('added-watch');
+      const itemContent = selectedItem.querySelector('.catalog-content');
+      const itemThumb = selectedItem.querySelector('.catalog-thumb');
+      // @ts-ignore
+      itemThumb.style.padding = '26px 0';
+      // @ts-ignore
+      itemContent.style.marginTop = '40px';
+      // @ts-ignore
       // @ts-ignore
       modalRefs.open?.removeAttribute('disabled');
       // @ts-ignore

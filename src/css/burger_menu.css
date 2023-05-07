@@ -33,12 +33,16 @@
 
   width: 24px;
   height: 24px;
+  padding: 0;
 
   background-color: transparent;
   border: none;
 }
 
 .menu-close-icon {
+  width: 24px;
+  height: 24px;
+
   stroke: var(--color-white);
 }
 

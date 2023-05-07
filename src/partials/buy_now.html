@@ -5,15 +5,15 @@
       type="button"
       aria-label="Close modal window"
     >
-      <svg class="modal-close-icon" width="20" height="20">
+      <svg class="modal-close-icon">
         <use href="/img/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <div class="modal-column first-column"></div>
     <div class="modal-column">
       <form name="modal-form" class="modal-form">
-        <div class="form-field" role="group">
-          <label class="form-label">
+        <div class="form-field" role="group" aria-labelledby="full-name">
+          <label class="form-label" id="full-name">
             Full name
             <input
               type="text"
@@ -25,8 +25,8 @@
             />
           </label>
         </div>
-        <div class="form-field" role="group">
-          <label class="form-label">
+        <div class="form-field" role="group" aria-labelledby="email">
+          <label class="form-label" id="email">
             Email
             <input
               type="email"
@@ -38,8 +38,8 @@
             />
           </label>
         </div>
-        <div class="form-field" role="group">
-          <label class="form-label">
+        <div class="form-field" role="group" aria-labelledby="card-number">
+          <label class="form-label" id="card-number">
             Card number
             <input
               type="text"
@@ -52,8 +52,8 @@
             />
           </label>
         </div>
-        <div class="form-field" role="group">
-          <label class="form-label">
+        <div class="form-field" role="group" aria-labelledby="comments">
+          <label class="form-label" id="comments">
             Comments
             <textarea
               name="comment"
@@ -66,8 +66,8 @@
       </form>
       <p class="catalog-price privacy-text">
         By clicking on “Submit” button, you agree to our
-        <a class="privacy-link">Privacy Policy</a>, and allow Promodo to use
-        this information for marketing purposes.
+        <a href="#" class="privacy-link">Privacy Policy</a>, and allow Promodo
+        to use this information for marketing purposes.
       </p>
     </div>
   </div>
