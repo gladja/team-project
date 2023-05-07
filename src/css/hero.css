@@ -141,7 +141,8 @@
 }
 
 .hero-text {
-  margin-left: 20px;  
+  margin-left: 20px;
+  margin-bottom: 100px;  
 }
 
 .hero-watches-img {
@@ -204,7 +205,7 @@
 .hero-text {
     width: 282px;
     margin-left: 144px;
-    
+    margin-bottom: 16px;
 }
 
 .page-wrap {
