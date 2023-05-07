@@ -1,3 +1,6 @@
+import './js/swiper-bundle.min.js'
+import './js/swiper.js'
+
 // Mobile menu
 // @ts-ignore
 import { menuRefs } from '/js/mobileMenu';
@@ -21,3 +24,5 @@ import { addEventListener } from '/js/modal';
 addEventListener();
 
 modalRefs.close?.addEventListener('click', toggleModal);
+
+
