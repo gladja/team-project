@@ -1,4 +1,4 @@
-.header {
+.section-header {
     background-color: #141414;
 }
 .header-container-mob {
@@ -61,6 +61,18 @@
     font-size: 9px;
     line-height: 1.33;
     color: #FFFFFF;
+}
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 @media screen and (min-width: 768px) {
     .header-container-mob {
