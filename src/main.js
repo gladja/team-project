@@ -16,13 +16,12 @@ import { modalRefs } from '/js/modal';
 // @ts-ignore
 import { toggleModal } from '/js/modal';
 // @ts-ignore
-import { selectItem } from '/js/modal';
-// @ts-ignore
 import { addEventListener } from '/js/modal';
 
-// //? Добавляет обработчик события на каждый элемент списка при  загрузке страницы
+// //? Добавляет обработчик события на каждый элемент каталога при  загрузке страницы
 addEventListener();
 
+//? Обработчик события на крестик
 modalRefs.close?.addEventListener('click', toggleModal);
 
 

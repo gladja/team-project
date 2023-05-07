@@ -7,38 +7,38 @@ export const modalRefs = {
 };
 
 export const catalogRefs = {
+  list: document.querySelector('.catalog-list'),
   items: document.querySelectorAll('.catalog-item'),
   requireText: document.querySelector('.catalog-require'),
 };
 
-//? Выбор элемента из списка часов и вставка в модалку
-export function selectItem() {
-  const items = document.querySelectorAll('.catalog-item');
-  let selectedItem = null;
+// //? Выбор элемента из списка часов и вставка в модалку
+export function selectItem(item) {
+  const selected = document.querySelector('.selected');
+  if (selected) {
+    selected.classList.remove('selected');
+  }
+  item.classList.add('selected');
 
-  items.forEach(item => {
-    item.addEventListener('click', () => {
-      document.querySelector('.selected')?.classList.remove('selected');
-      item.classList.add('selected');
-      selectedItem = document.createElement('div');
-      selectedItem.innerHTML = item.innerHTML;
-      selectedItem.classList.add('modal-column');
-      // @ts-ignore
-      modalRefs.open?.removeAttribute('disabled');
-      // @ts-ignore
-      document.querySelector('.catalog-require').style.opacity = '0';
-    });
-  });
+  const selectedItem = document.createElement('div');
+  selectedItem.innerHTML = item.innerHTML;
+  selectedItem.classList.add('added-watch');
+  // @ts-ignore
+  modalRefs.column.innerHTML = '';
+  // @ts-ignore
+  modalRefs.column.appendChild(selectedItem);
 
-  modalRefs.open?.addEventListener('click', () => {
-    if (selectedItem === null) return;
+  const itemContent = selectedItem.querySelector('.catalog-content');
+  const itemThumb = selectedItem.querySelector('.catalog-thumb');
+  // @ts-ignore
+  itemThumb.style.padding = '26px 0';
+  // @ts-ignore
+  itemContent.style.marginTop = '40px';
 
-    // @ts-ignore
-    modalRefs.column.innerHTML = '';
-    // @ts-ignore
-    modalRefs.column.appendChild(selectedItem);
-    toggleModal();
-  });
+  // @ts-ignore
+  modalRefs.open?.removeAttribute('disabled');
+  // @ts-ignore
+  document.querySelector('.catalog-require').style.opacity = '0';
 }
 
 //? Открыть/Закрыть модалку
@@ -51,6 +51,10 @@ export function toggleModal() {
 export function addEventListener() {
   const items = document.querySelectorAll('.catalog-item');
   items.forEach(item => {
-    item.addEventListener('click', selectItem);
+    item.addEventListener('click', () => {
+      selectItem(item);
+    });
   });
+
+  modalRefs.open?.addEventListener('click', toggleModal);
 }
