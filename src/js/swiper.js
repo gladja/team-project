@@ -6,6 +6,10 @@ const swiper = new Swiper('.mySwiper', {
   keyboard: {
     enabled: true,
   },
+   pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',
