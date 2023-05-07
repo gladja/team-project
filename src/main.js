@@ -1,4 +1,4 @@
-import '/js/swiper-bundle.min.js'
+// import '/js/swiper-bundle.min.js'
 import '/js/swiper.js'
 
 // Mobile menu
