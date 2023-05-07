@@ -31,34 +31,18 @@
 
 .picture {
   background: var(--color-black);
-  width: 80px;
-  height: 80px;
+  
 }
 
 .sale-bg-big {
   background: var(--color-black);
-  width: 235px;
-  height: 350px;
-}
-/* .sale-pictur-big{
-  display: block;
-  margin: 0 auto;
-  width: 235px;
-  height: 100%;
-} */
+  }
+
 
 .sale-big-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 235px;
-  height: 100%;
+    height: 100%;
 }
 
-.sale-watch-img-one {
-  display: block;
-  width: 64px;
-  margin: 0 auto;
-}
 
 .title-watch-name {
   max-width: 335px;
@@ -158,24 +142,7 @@
     gap: 10px;
     list-style: none;
   }
-  .picture {
-    width: 146px;
-    height: 146px;
-  }
-
-  .sale-bg-big {
-    width: 406px;
-    height: 614px;
-  }
-
-  .sale-big-img {
-    max-width: 406px;
-  }
-  .sale-watch-img-one {
-    width: 112px;
-  }
-
-  .title-watch-name {
+    .title-watch-name {
     max-width: 572px;
     font-size: 38px;
     line-height: calc(42 / 38);
