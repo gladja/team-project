@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8' />
-  <link rel='icon' type='image/svg+xml' href='/team-project/favicon.svg' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <title>The Watch Spot</title>
-  <link rel='stylesheet'
-        href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  
-  <script type="module" crossorigin src="/team-project/assets/index-650885e3.js"></script>
-  <link rel="stylesheet" href="/team-project/assets/index-3763372f.css">
-</head>
-<body>
-<header>
-  <header class="section-header">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/team-project/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Watch Spot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+    <script type="module" crossorigin src="/team-project/assets/index-650885e3.js"></script>
+    <link rel="stylesheet" href="/team-project/assets/index-3763372f.css">
+  </head>
+  <body>
+    <header>
+      <header class="section-header">
   <div class="container header-container">
     <div class="logo-header">
       <a href="./index.html">
@@ -58,9 +64,9 @@
     </button>
   </div>
 </header>
-</header>
-<main>
-  <section class='section hero'>
+    </header>
+    <main>
+      <section class='section hero'>
   <div class='container'>
     <div class="page-wrap">
       <div class="hero-wrap">
@@ -141,7 +147,7 @@
     </div>     
   </div>
 </section>
-  <section class='section bg' id="about-us" >
+      <section class='section bg' id="about-us" >
   <div class='container'>
     <div class='about-section'>
       <h2 class='about-title title'>
@@ -170,7 +176,7 @@
   </div>
 </section>
 
-  <!--============Catalog section-->
+      <!--============Catalog section-->
 <section id="catalog" class="section catalog">
   <div class="container">
     <h2 class="catalog-title title">Catalog</h2>
@@ -601,7 +607,7 @@
   </div>
 </section>
 
-  <section class="section new-watches">
+      <section class="section new-watches">
   <div class="container">
     <h2 class="new-watches-title">New watches</h2>
     <h3 class="new-watches-subtitle title">
@@ -651,7 +657,7 @@
   </div>
 </section>
 
-  <section class="section-sale" id="sale">
+      <section class="section-sale" id="sale">
   <div class="container sale-container-desktop">
     <h2 class="sale-titel">Sale</h2>
     <div class="sale-tabl-infor">
@@ -786,8 +792,8 @@
       </div>
       </div>
 </section>
-</main>
-<footer class="footer-container">
+    </main>
+    <footer class="footer-container">
 
   <div class="container footer-container-positions">
 
@@ -876,7 +882,7 @@
 
 </footer>
 
-<div class="modal-backdrop">
+    <div class="modal-backdrop">
   <div class="modal">
     <button
       class="modal-close-btn"
@@ -951,7 +957,7 @@
   </div>
 </div>
 
-<div class="mobile-menu">
+    <div class="mobile-menu">
   <div class="logo-header">
     <svg
       viewBox="17 15 45 50"
@@ -1077,7 +1083,16 @@
   </ul>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
 
-</body>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    
+  </body>
 </html>
