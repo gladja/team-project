@@ -65,6 +65,32 @@
     transform: rotateY(180deg);
 }
 
+.swiper-pagination {
+    display: flex;
+    color: var(--color-black);
+    margin-left: 190px;
+}
+
+.swiper-pagination-current {
+    margin-right: 45px;
+    color: var(--color-white);
+}
+
+.swiper-pagination-current::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.swiper-pagination-total {
+    color: var(--color-white);
+}
+
 .hero-text {
     font-weight: 300;
     line-height: 1.29;
@@ -126,7 +152,11 @@
 }
 
 .swiper-pagination {
-    margin-left: 200px;
+    margin-left: 360px;
+}
+
+.swiper-pagination-current {
+    margin-right: 50px;
 }
 
 .hero-wrap {
