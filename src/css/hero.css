@@ -10,7 +10,7 @@
     line-height: 1.05;
     letter-spacing: -0.04em;
     color: var(--color-white);
-    width: 335px;
+    max-width: 335px;
     margin-bottom: 60px;
 }
 
@@ -65,11 +65,37 @@
     transform: rotateY(180deg);
 }
 
+.swiper-pagination {
+    display: flex;
+    color: var(--color-black);
+    margin-left: 190px;
+}
+
+.swiper-pagination-current {
+    margin-right: 45px;
+    color: var(--color-white);
+}
+
+.swiper-pagination-current::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--color-white);
+    position: absolute;
+    top: 40%;
+    left: 3%;
+}
+
+.swiper-pagination-total {
+    color: var(--color-white);
+}
+
 .hero-text {
     font-weight: 300;
     line-height: 1.29;
     color: var(--color-white);
-    width: 248px;
+    max-width: 248px;
     margin-left: 67px;
     margin-bottom: 40px;
 }
@@ -93,7 +119,7 @@
 }
 
 .hero-title {
-    width: 653px;
+    max-width: 653px;
     font-size: 60px;
     line-height: 1.03;
 }
@@ -115,7 +141,8 @@
 }
 
 .hero-text {
-  margin-left: 20px;  
+  margin-left: 20px;
+  margin-bottom: 100px;  
 }
 
 .hero-watches-img {
@@ -126,7 +153,11 @@
 }
 
 .swiper-pagination {
-    margin-left: 200px;
+    margin-left: 360px;
+}
+
+.swiper-pagination-current {
+    margin-right: 50px;
 }
 
 .hero-wrap {
@@ -167,14 +198,14 @@
 }
 
 .hero-title{
-    width: 750px;
+    max-width: 750px;
     margin-bottom: 0;
 }
 
 .hero-text {
     width: 282px;
     margin-left: 144px;
-    
+    margin-bottom: 16px;
 }
 
 .page-wrap {
