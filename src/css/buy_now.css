@@ -143,7 +143,7 @@
     transition-duration: 300ms;
 }
 
-.form-input:invalid:not(:placeholder-shown) {
+.form-input:invalid:not(:placeholder-shown, :focus) {
     border-color: transparent;
     outline: 1px solid red;
 }
