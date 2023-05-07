@@ -96,7 +96,7 @@
   transition-duration: 300ms;
 }
 .catalog-btn:is(:hover, :focus) {
-  box-shadow: inset 10rem 0 0 0 rgba(255, 255, 255, .3)
+  box-shadow: inset 10rem 0 0 0 rgba(255, 255, 255, 0.3);
 }
 
 /* !!! */
@@ -109,15 +109,6 @@
 /* !!!!! */
 .catalog-btn:disabled:is(:hover, :focus) {
   box-shadow: none;
-}
-
-/* ! Это не надо, удали сам */
-.catalog-btn-text {
-  font-size: 12px;
-  line-height: 1.166;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--color-white);
 }
 
 /*==========Catalog overlay=========*/
@@ -170,14 +161,9 @@
     width: 100%;
     padding: 24px 0;
   }
-  .catalog-img {
-    width: 100%;
-    height: auto;
-  }
+
   .catalog-item {
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
   .catalog-overlay {
     padding: 20px;
@@ -193,11 +179,6 @@
 }
 
 @media screen and (min-width: 375px) {
-  .catalog {
-  }
-  /*.catalog-container {*/
-  /*  width: 375px;*/
-  /*}*/
   .catalog-title {
     margin-bottom: 40px;
     font-size: 32px;
@@ -210,30 +191,18 @@
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    /* row-gap: 40px; */
   }
   .catalog-item {
     width: 335px;
     display: flex;
     flex-direction: column;
   }
-  .catalog-img {
-  }
+
   .catalog-thumb {
     display: block;
     padding: 43px 30px;
   }
-  .catalog-content {
-  }
-  /* .catalog-description {
-    margin-bottom: 4px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.285;
-    letter-spacing: -0.02em;
-    color: var(--color-black);
-  } */
-  
+
   .catalog-price {
     font-size: 12px;
     font-weight: 400;
@@ -241,15 +210,9 @@
     letter-spacing: -0.02em;
     color: var(--color-black-05);
   }
-  .catalog-btn {
-  }
 }
 /*==========Tablet=========*/
 @media screen and (min-width: 768px) {
-  /*.catalog-container {*/
-  /*  width: 768px;*/
-  /*}*/
-
   .catalog-title {
     font-size: 40px;
     line-height: 1.11;
@@ -278,10 +241,6 @@
 
 /*==========Desktop=========*/
 @media screen and (min-width: 1280px) {
-  /*.catalog-container {*/
-  /*  width: 1280px;*/
-  /*}*/
-
   .catalog-title {
     margin-bottom: 64px;
   }
