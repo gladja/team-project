@@ -10,7 +10,7 @@
     line-height: 1.05;
     letter-spacing: -0.04em;
     color: var(--color-white);
-    width: 335px;
+    max-width: 335px;
     margin-bottom: 60px;
 }
 
@@ -83,7 +83,7 @@
     height: 1px;
     background: var(--color-white);
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 3%;
 }
 
@@ -95,7 +95,7 @@
     font-weight: 300;
     line-height: 1.29;
     color: var(--color-white);
-    width: 248px;
+    max-width: 248px;
     margin-left: 67px;
     margin-bottom: 40px;
 }
@@ -119,7 +119,7 @@
 }
 
 .hero-title {
-    width: 653px;
+    max-width: 653px;
     font-size: 60px;
     line-height: 1.03;
 }
@@ -197,7 +197,7 @@
 }
 
 .hero-title{
-    width: 750px;
+    max-width: 750px;
     margin-bottom: 0;
 }
 
