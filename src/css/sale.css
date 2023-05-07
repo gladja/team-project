@@ -81,10 +81,7 @@
 .price-mrp {
   margin-bottom: 40px;
 }
-.liniya {
-  border-top: 1px solid var(--color-black);
-  margin-bottom: 8px;
-}
+
 .sale-description {
   font-weight: 400;
   font-size: 18px;
@@ -95,12 +92,21 @@
   margin-bottom: 17px;
   position: relative;
 }
+.sale-description::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-black);
+  display: block;
+  position: absolute;
+  top: -8px;
+}
 .sale-description::after {
   content: '';
   width: 16px;
   height: 1px;
   background-color: var(--color-black);
-  display: inline-block;
+  display: block;
   position: absolute;
   right: 0;
   top: 50%;
@@ -112,11 +118,12 @@
   line-height: calc(18 / 14);
   letter-spacing: -0.01em;
   color: var(--color-black-05);
+  
+}
+.psale{
   margin-bottom: 40px;
 }
-.description-functional:last-child {
-  margin-bottom: 0;
-}
+
 @media screen and (min-width: 375px) {
 }
 
