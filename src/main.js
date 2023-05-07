@@ -13,8 +13,6 @@ import { modalRefs } from '/js/modal';
 // @ts-ignore
 import { toggleModal } from '/js/modal';
 // @ts-ignore
-import { selectItem } from '/js/modal';
-// @ts-ignore
 import { addEventListener } from '/js/modal';
 
 // //? Добавляет обработчик события на каждый элемент каталога при  загрузке страницы

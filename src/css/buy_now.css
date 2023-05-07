@@ -1,13 +1,17 @@
 /** ---------------MOBILE------------------ */
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .modal-backdrop {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
 
     width: 100%;
     height: 100%;
-    z-index: 99;
 
     background-color: var(--color-black-05);
     opacity: 0;
@@ -31,12 +35,12 @@
     -moz-transform: translate(-50%, -200%);
     -ms-transform: translate(-50%, -200%);
     -o-transform: translate(-50%, -200%);
+    z-index: 100;
 
     width: 335px;
     height: 100%;
     overflow-y: auto;
     padding: 40px 20px;
-    z-index: 100;
 
     background-color: var(--color-white);
     box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
@@ -83,10 +87,6 @@
     max-width: 295px;
 }
 
-.added-watch {
-    max-width: 335px;
-}
-
 @media screen and (max-width: 374px) {
     .modal-column {
         width: 90%;
@@ -94,13 +94,17 @@
     }
 }
 
+.added-watch {
+    max-width: 335px;
+}
+
 .modal-thumb {
     padding: 25px 10px;
 }
 
 .modal-name {
-    margin-top: 40px;
     max-width: 276px;
+    margin-top: 40px;
 }
 
 .modal-form {
@@ -166,10 +170,10 @@
     padding: 0;
     margin-top: 20px;
 
-    color: var(--color-white);
-    text-transform: uppercase;
     font-size: 12px;
     line-height: calc(14px / 12px);
+    color: var(--color-white);
+    text-transform: uppercase;
 
     background-color: var(--color-dark-green);
     border-radius: 8px;
@@ -185,8 +189,8 @@
 }
 
 .modal-btn:disabled {
-    background-color: grey;
     color: var(--color-white);
+    background-color: grey;
 }
 
 .modal-btn:disabled:is(:hover, :focus) {
@@ -213,6 +217,7 @@
         -moz-transform: translate(-50%, -200%);
         -ms-transform: translate(-50%, -200%);
         -o-transform: translate(-50%, -200%);
+
         width: 750px;
         height: 670px;
         display: flex;
@@ -301,8 +306,4 @@
     .modal-btn:is(:hover, :focus) {
         box-shadow: inset 507px 0 0 0 rgba(255, 255, 255, .3)
     }
-}
-
-.overflow-hidden {
-    overflow: hidden;
 }
