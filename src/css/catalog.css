@@ -63,6 +63,7 @@
 }
 .catalog-heart {
   position: absolute;
+  z-index: 100;
   right: 14px;
   top: 14px;
   stroke: var(--color-black-04);
