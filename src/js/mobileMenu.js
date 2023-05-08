@@ -4,7 +4,7 @@ export const menuRefs = {
   menu: document.querySelector('.mobile-menu'),
   links: document.querySelectorAll('.menu-link'),
 };
-const body = document.querySelector('body');
+const body = document.body;
 
 export function toggleMenu() {
   menuRefs.menu?.classList.toggle('menu-animation');

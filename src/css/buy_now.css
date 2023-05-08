@@ -134,6 +134,7 @@
     color: var(--color-black);
     letter-spacing: -0.02em;
 
+    background-color: transparent;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -186,15 +187,6 @@
 
 .modal-btn:is(:hover, :focus) {
     box-shadow: inset 295px 0 0 0 rgba(255, 255, 255, .3)
-}
-
-.modal-btn:disabled {
-    color: var(--color-white);
-    background-color: grey;
-}
-
-.modal-btn:disabled:is(:hover, :focus) {
-    box-shadow: none;
 }
 
 .privacy-text {
