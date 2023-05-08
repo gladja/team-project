@@ -40,7 +40,13 @@
     line-height: 1;
     letter-spacing: -0.03em;
     color: #FFFFFF;
+    transition: color 250ms cubic-bezier(.4, 0, .2, 1);
+}       
+.header-logo-text:hover,
+.header-logo-text:focus {
+    color: var(--color-card)
 }
+
 .header-list {
     display: none;
     font-weight: 400;

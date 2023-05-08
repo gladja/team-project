@@ -1,0 +1,57 @@
+.btn-style {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+.scroll-to-top {
+  position: relative;
+}
+
+.btn-position {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+
+.btn-style {
+  background: var(--color-black-05);
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: var(--color-white);
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+  /*font-size: 40px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.scroll-icon {
+  fill: var(--color-white);
+  width: 24px;
+  height: 24px;
+  transform: rotateZ(90deg);
+}
+
+.btn-style:hover {
+  background: var(--color-black);
+}
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+}

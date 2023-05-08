@@ -1,5 +1,6 @@
 import '/js/swiper.js';
 import '/js/aos.js';
+import '/js/scroll.js';
 
 // Mobile menu
 // @ts-ignore
