@@ -54,7 +54,6 @@
   justify-content: center;
   height: 40px;
   width: 40px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-last-text {
@@ -76,6 +75,7 @@
 .footer-svg-color:focus {
   fill: var(--color-card);
   border-color: var(--color-card);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-hover:hover,
@@ -121,9 +121,7 @@
   .footer-margin {
     margin-right: 18px;
   }
-  .footer-address {
-    margin-bottom: 145px;
-  }
+
   .footer-last-text {
     font-size: 14px;
     line-height: 1.28;
@@ -195,5 +193,6 @@
 
   .footer-containers {
     justify-content: space-between;
+    margin-bottom: 145px;
   }
 }
