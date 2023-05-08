@@ -56,7 +56,7 @@
 
 .menu-link {
   font-size: 14px;
-  line-height: calc(18px / 14px);
+  line-height: calc(18 / 14);
   text-transform: uppercase;
   color: var(--color-white);
 }
