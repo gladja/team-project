@@ -2,6 +2,10 @@
   background: var(--color-bg);
 }
 
+.about-section {
+  margin-bottom: 40px;
+}
+
 .about-title {
   margin-bottom: 40px;
   letter-spacing: -0.02em;
@@ -12,7 +16,7 @@
 }
 
 .about-item:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .about-text {
@@ -44,6 +48,10 @@
     justify-content: space-between;
   }
 
+  .about-title {
+    margin-bottom: 0;
+  }
+
   .about-list {
     display: flex;
     gap: 20px;
@@ -51,6 +59,7 @@
 
   .about-item {
     width: 220px;
+    margin-bottom: 0;
   }
 
   .about-item:last-child {
