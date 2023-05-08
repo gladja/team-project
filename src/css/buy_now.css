@@ -117,7 +117,7 @@
 
 .form-label {
     font-size: 12px;
-    line-height: calc(14px / 12px);
+    line-height: calc(14 / 12);
     color: var(--color-black);
 }
 
@@ -130,7 +130,7 @@
     margin-top: 12px;
 
     font-size: 14px;
-    line-height: calc(18px / 14px);
+    line-height: calc(18 / 14);
     color: var(--color-black);
     letter-spacing: -0.02em;
 
@@ -150,7 +150,7 @@
 
 .form-input::placeholder {
     font-size: 14px;
-    line-height: calc(18px / 14px);
+    line-height: calc(18 / 14);
     color: var(--color-black-05);
     letter-spacing: -0.02em;
 }
@@ -171,7 +171,7 @@
     margin-top: 20px;
 
     font-size: 12px;
-    line-height: calc(14px / 12px);
+    line-height: calc(14 / 12);
     color: var(--color-white);
     text-transform: uppercase;
 
@@ -256,12 +256,12 @@
 
     .form-label {
         font-size: 14px;
-        line-height: calc(18px / 14px);
+        line-height: calc(18 / 14);
     }
 
     .form-input {
         font-size: 16px;
-        line-height: calc(18px / 16px);
+        line-height: calc(18 / 16);
     }
 
     .form-textarea {
@@ -270,7 +270,7 @@
 
     .form-input::placeholder {
         font-size: 16px;
-        line-height: calc(18px / 16px);
+        line-height: calc(18 / 16);
     }
 
     .modal-btn:is(:hover, :focus) {
