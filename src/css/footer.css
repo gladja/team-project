@@ -105,6 +105,7 @@
   }
   .footer-containers {
     display: flex;
+    margin-bottom: 152px;
   }
   .footer-positions {
     min-width: 81px;
@@ -193,6 +194,7 @@
 
   .footer-containers {
     justify-content: space-between;
-    margin-bottom: 145px;
+    margin-bottom: 174px;
+    
   }
 }
