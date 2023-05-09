@@ -69,11 +69,21 @@
   stroke: var(--color-black-04);
   width: 24px;
   height: 24px;
+  transition-duration: 250ms;
+  fill: transparent;
 }
 
-/* !!! */
-.selected {
-  box-shadow: 0px 2px 0 0 var(--color-black-04);
+.catalog-item:is(:hover, :focus) .catalog-heart {
+  stroke: var(--color-white);
+}
+
+.selected-heart {
+  fill: var(--color-dark-green);
+  stroke: var(--color-copyright);
+}
+
+.catalog-item:is(:hover, :focus) .selected-heart {
+  fill: var(--color-white);
 }
 
 .catalog-btn {
