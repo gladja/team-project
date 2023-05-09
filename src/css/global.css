@@ -81,3 +81,11 @@ body {
     line-height: 1.1em;
   }
 }
+
+.mode-bg,
+.mode-text,
+.mode-title,
+.mode-semi-tr,
+.mode-icon {
+  transition-duration: 300ms;
+}
