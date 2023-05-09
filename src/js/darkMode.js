@@ -24,36 +24,44 @@ export const colors = {
 let toggled = false;
 
 export function toggleMode() {
-  modeRefs.toggle?.classList.toggle('toggled-btn');
-  modeRefs.circle?.classList.toggle('toggled-circle');
-  modeRefs.toggleMobile?.classList.toggle('toggled-btn');
-  modeRefs.circleMobile?.classList.toggle('toggled-circle');
+  const toggles = [modeRefs.toggle, modeRefs.toggleMobile];
+  const circles = [modeRefs.circle, modeRefs.circleMobile];
+  toggles.forEach(toggle => {
+    if (toggle) {
+      toggle?.classList.toggle('toggled-btn');
+    }
+  });
+  circles.forEach(circle => {
+    if (circle) {
+      circle?.classList.toggle('toggled-circle');
+    }
+  });
 
   if (!toggled) {
     modeRefs.bg.forEach(item => {
       // @ts-ignore
       item.style.backgroundColor = colors.black;
     });
-    modeRefs.text.forEach(item => {
-      // @ts-ignore
-      item.style.color = colors.white;
+
+    [
+      modeRefs.text,
+      modeRefs.title,
+      modeRefs.semiTrText,
+      modeRefs.input,
+    ].forEach(group => {
+      group.forEach(item => {
+        // @ts-ignore
+        item.style.color = colors.white;
+      });
     });
-    modeRefs.title.forEach(item => {
-      // @ts-ignore
-      item.style.color = colors.white;
-    });
-    modeRefs.semiTrText.forEach(item => {
-      // @ts-ignore
-      item.style.color = colors.white;
-    });
+
     modeRefs.input.forEach(item => {
-      // @ts-ignore
-      item.style.color = colors.white;
       // @ts-ignore
       item.style.backgroundColor = colors.gray;
       // @ts-ignore
       item.style.borderColor = colors.white;
     });
+
     // @ts-ignore
     modeRefs.footer.style.backgroundColor = colors.black;
     // @ts-ignore
@@ -65,21 +73,24 @@ export function toggleMode() {
       // @ts-ignore
       item.style.backgroundColor = colors.bgColor;
     });
-    modeRefs.text.forEach(item => {
-      // @ts-ignore
-      item.style.color = colors.black;
+
+    [modeRefs.text, modeRefs.input].forEach(group => {
+      group.forEach(item => {
+        // @ts-ignore
+        item.style.color = colors.black;
+      });
     });
+
     modeRefs.title.forEach(item => {
       // @ts-ignore
       item.style.color = colors.green;
     });
+
     modeRefs.semiTrText.forEach(item => {
       // @ts-ignore
       item.style.color = colors.semiTr;
     });
     modeRefs.input.forEach(item => {
-      // @ts-ignore
-      item.style.color = colors.black;
       // @ts-ignore
       item.style.backgroundColor = 'transparent';
       // @ts-ignore
