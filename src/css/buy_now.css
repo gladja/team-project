@@ -291,10 +291,6 @@
         margin-top: 40px;
     }
 
-    .privacy-text {
-        max-width: 75%;
-    }
-
     .modal-btn:is(:hover, :focus) {
         box-shadow: inset 507px 0 0 0 rgba(255, 255, 255, .3)
     }
