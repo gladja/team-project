@@ -17,7 +17,7 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/epilogue-v17-latin-regular.eot');
-  src: url('../fonts/epilogue-v17-latin-regular.eot?#iefix') format('embedded-opentype')
+  src: url('../fonts/epilogue-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
   url('../fonts/epilogue-v17-latin-regular.woff2') format('woff2'),
   url('../fonts/epilogue-v17-latin-regular.woff') format('woff'),
   url('../fonts/epilogue-v17-latin-regular.ttf') format('truetype'),
