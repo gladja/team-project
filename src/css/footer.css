@@ -1,3 +1,7 @@
+.footer-container {
+  border-top: 1px solid transparent;
+}
+
 .footer-logo {
   display: flex;
   width: 40px;
