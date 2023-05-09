@@ -23,9 +23,6 @@
     align-items: center;
     gap: 4px;
 }
-.header-list-mob {
-    display: none;
-}
 .svg-header {
     fill: #ffffff;
     display: flex;
@@ -41,7 +38,7 @@
     letter-spacing: -0.03em;
     color: #FFFFFF;
     transition: color 250ms cubic-bezier(.4, 0, .2, 1);
-}       
+}
 .header-logo-text:hover,
 .header-logo-text:focus {
     color: var(--color-card)
