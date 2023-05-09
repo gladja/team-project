@@ -82,11 +82,12 @@ body {
   }
 }
 
-.mode-bg
+.mode-bg,
 .mode-bg-secondary,
 .mode-text,
 .mode-title,
 .mode-semi-tr,
-.mode-icon {
+.mode-icon,
+.mode-footer {
   transition-duration: 300ms;
 }
