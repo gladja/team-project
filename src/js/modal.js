@@ -30,37 +30,28 @@ function addToFav(e) {
   }
 }
 
-//? Выбор элемента из списка часов и вставка в модалку
-export function selectItem(item) {
+function selectItem(item) {
   const selectedItem = document.createElement('div');
   selectedItem.innerHTML = item.innerHTML;
   selectedItem.classList.add('added-watch');
-  // @ts-ignore
   modalRefs.column.innerHTML = '';
-  // @ts-ignore
   modalRefs.column.appendChild(selectedItem);
 
   const itemContent = selectedItem.querySelector('.catalog-content');
   const itemThumb = selectedItem.querySelector('.catalog-thumb');
   const itemHeart = selectedItem.querySelector('.catalog-heart');
-  // @ts-ignore
   itemThumb.style.padding = '26px 0';
-  // @ts-ignore
   itemContent.style.marginTop = '40px';
-  // @ts-ignore
   itemHeart.style.display = 'none';
 
-  // @ts-ignore
   modalRefs.open?.removeAttribute('disabled');
 }
 
-//? Открыть/Закрыть модалку
 export function toggleModal() {
   modalRefs.backdrop?.classList.toggle('backdrop-animation');
   modalRefs.modal?.classList.toggle('modal-animation');
 }
 
-//? Добавляет обработчик события на каждый элемент списка при  загрузке страницы
 export function addEventListener() {
   const items = document.querySelectorAll('.catalog-item');
   items.forEach(item => {
