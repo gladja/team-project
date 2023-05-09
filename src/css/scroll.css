@@ -1,8 +1,3 @@
-.btn-style {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
 .scroll-to-top {
   position: relative;
 }
@@ -52,6 +47,4 @@
   100% {
     transform: translateY(0px);
   }
-}
-
 }
