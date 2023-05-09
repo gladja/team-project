@@ -29,7 +29,7 @@
     max-width: 448px;
     font-size: 40px;
     line-height: 1.1;
-    color: #1e2827;
+    color: var(--color-dark-green);
     letter-spacing: -0.02em;
   }
 
