@@ -117,7 +117,7 @@
 
 .form-label {
     font-size: 12px;
-    line-height: calc(14px / 12px);
+    line-height: calc(14 / 12);
     color: var(--color-black);
 }
 
@@ -130,10 +130,11 @@
     margin-top: 12px;
 
     font-size: 14px;
-    line-height: calc(18px / 14px);
+    line-height: calc(18 / 14);
     color: var(--color-black);
     letter-spacing: -0.02em;
 
+    background-color: transparent;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -150,7 +151,7 @@
 
 .form-input::placeholder {
     font-size: 14px;
-    line-height: calc(18px / 14px);
+    line-height: calc(18 / 14);
     color: var(--color-black-05);
     letter-spacing: -0.02em;
 }
@@ -171,7 +172,7 @@
     margin-top: 20px;
 
     font-size: 12px;
-    line-height: calc(14px / 12px);
+    line-height: calc(14 / 12);
     color: var(--color-white);
     text-transform: uppercase;
 
@@ -186,15 +187,6 @@
 
 .modal-btn:is(:hover, :focus) {
     box-shadow: inset 295px 0 0 0 rgba(255, 255, 255, .3)
-}
-
-.modal-btn:disabled {
-    color: var(--color-white);
-    background-color: grey;
-}
-
-.modal-btn:disabled:is(:hover, :focus) {
-    box-shadow: none;
 }
 
 .privacy-text {
@@ -256,12 +248,12 @@
 
     .form-label {
         font-size: 14px;
-        line-height: calc(18px / 14px);
+        line-height: calc(18 / 14);
     }
 
     .form-input {
         font-size: 16px;
-        line-height: calc(18px / 16px);
+        line-height: calc(18 / 16);
     }
 
     .form-textarea {
@@ -270,7 +262,7 @@
 
     .form-input::placeholder {
         font-size: 16px;
-        line-height: calc(18px / 16px);
+        line-height: calc(18 / 16);
     }
 
     .modal-btn:is(:hover, :focus) {
