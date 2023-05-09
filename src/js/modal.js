@@ -12,14 +12,26 @@ export const catalogRefs = {
   requireText: document.querySelector('.catalog-require'),
 };
 
-// //? Выбор элемента из списка часов и вставка в модалку
-export function selectItem(item) {
-  const selected = document.querySelector('.selected');
-  if (selected) {
-    selected.classList.remove('selected');
+function addToFav(e) {
+  const selectedHeart = e.target
+    .closest('.catalog-item')
+    .querySelector('.catalog-heart');
+  if (selectedHeart) {
+    const hearts = document.querySelectorAll('.catalog-heart');
+    hearts.forEach(heart => {
+      if (heart === selectedHeart) {
+        heart.classList.add('selected-heart');
+        heart.classList.add('animate__bounceIn');
+      } else {
+        heart.classList.remove('selected-heart');
+        heart.classList.remove('animate__bounceIn');
+      }
+    });
   }
-  item.classList.add('selected');
+}
 
+//? Выбор элемента из списка часов и вставка в модалку
+export function selectItem(item) {
   const selectedItem = document.createElement('div');
   selectedItem.innerHTML = item.innerHTML;
   selectedItem.classList.add('added-watch');
@@ -30,10 +42,13 @@ export function selectItem(item) {
 
   const itemContent = selectedItem.querySelector('.catalog-content');
   const itemThumb = selectedItem.querySelector('.catalog-thumb');
+  const itemHeart = selectedItem.querySelector('.catalog-heart');
   // @ts-ignore
   itemThumb.style.padding = '26px 0';
   // @ts-ignore
   itemContent.style.marginTop = '40px';
+  // @ts-ignore
+  itemHeart.style.display = 'none';
 
   // @ts-ignore
   modalRefs.open?.removeAttribute('disabled');
@@ -49,8 +64,9 @@ export function toggleModal() {
 export function addEventListener() {
   const items = document.querySelectorAll('.catalog-item');
   items.forEach(item => {
-    item.addEventListener('click', () => {
+    item.addEventListener('click', e => {
       selectItem(item);
+      addToFav(e);
     });
   });
 
