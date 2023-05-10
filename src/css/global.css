@@ -32,8 +32,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow:hidden;
-
-  /*outline: 1px solid tomato;*/
 }
 
 @media screen and (min-width: 375px) {

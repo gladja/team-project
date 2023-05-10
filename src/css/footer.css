@@ -90,8 +90,6 @@
   fill: var(--color-card);
 }
 
-/* -------------------------------------------------- */
-
 @media screen and (min-width: 768px) {
   .footer-container {
     background-color: var(--color-dark-green);
