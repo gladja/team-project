@@ -139,8 +139,13 @@
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   background-color: var(--color-dark-green);
-  transform: translateY(100%);
+  transform: translateY(101%);
+  -webkit-transform: translateY(101%);
+  -moz-transform: translateY(101%);
+  -ms-transform: translateY(101%);
+  -o-transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .catalog-item:is(:hover, :focus) .catalog-overlay {
   transform: translateY(0);
