@@ -52,7 +52,7 @@ export function toggleModal() {
   modalRefs.modal?.classList.toggle('modal-animation');
 }
 
-export function addEventListener() {
+export function catalogEventListener() {
   const items = document.querySelectorAll('.catalog-item');
   items.forEach(item => {
     item.addEventListener('click', e => {
