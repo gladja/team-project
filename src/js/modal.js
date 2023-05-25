@@ -16,8 +16,10 @@ function addToFav(e) {
   const selectedHeart = e.target
     .closest('.catalog-item')
     .querySelector('.catalog-heart');
+
   if (selectedHeart) {
     const hearts = document.querySelectorAll('.catalog-heart');
+
     hearts.forEach(heart => {
       if (heart === selectedHeart) {
         heart.classList.add('selected-heart');
@@ -30,21 +32,31 @@ function addToFav(e) {
   }
 }
 
+const selectedItem = document.createElement('div');
+
 function selectItem(item) {
-  const selectedItem = document.createElement('div');
   selectedItem.innerHTML = item.innerHTML;
   selectedItem.classList.add('added-watch');
   modalRefs.column.innerHTML = '';
   modalRefs.column.appendChild(selectedItem);
 
-  const itemContent = selectedItem.querySelector('.catalog-content');
-  const itemThumb = selectedItem.querySelector('.catalog-thumb');
-  const itemHeart = selectedItem.querySelector('.catalog-heart');
-  itemThumb.style.padding = '26px 0';
-  itemContent.style.marginTop = '40px';
-  itemHeart.style.display = 'none';
+  restyleSelectedItem();
 
   modalRefs.open?.removeAttribute('disabled');
+}
+
+function restyleSelectedItem() {
+  const selectedItemRefs = {
+    content: selectedItem.querySelector('.catalog-content'),
+    thumb: selectedItem.querySelector('.catalog-thumb'),
+    heart: selectedItem.querySelector('.catalog-heart'),
+    text: selectedItem.querySelector('.catalog-description'),
+  };
+
+  selectedItemRefs.content.style.marginTop = '40px';
+  selectedItemRefs.thumb.style.padding = '26px 0';
+  selectedItemRefs.heart.style.display = 'none';
+  selectedItemRefs.text.style.maxWidth = '276px';
 }
 
 export function toggleModal() {
