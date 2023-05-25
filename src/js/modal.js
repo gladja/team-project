@@ -12,7 +12,7 @@ export const catalogRefs = {
   requireText: document.querySelector('.catalog-require'),
 };
 
-function addToFav(e) {
+function addHeart(e) {
   const selectedHeart = e.target
     .closest('.catalog-item')
     .querySelector('.catalog-heart');
@@ -69,7 +69,7 @@ export function catalogEventListener() {
   items.forEach(item => {
     item.addEventListener('click', e => {
       selectItem(item);
-      addToFav(e);
+      addHeart(e);
     });
   });
 
