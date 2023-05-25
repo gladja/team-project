@@ -12,6 +12,7 @@ export const modeRefs = {
   input: document.querySelectorAll('.mode-input'),
   footer: document.querySelector('.mode-footer'),
 };
+
 const colors = {
   white: '#fff',
   black: '#141414',
@@ -19,6 +20,8 @@ const colors = {
   semiTr: 'rgba(20, 20, 20, .5)',
   bgColor: '#fbfbfb',
   gray: '#ffffff80',
+  darkGray: 'gray',
+  transparent: 'transparent',
 };
 
 let toggled = false;
@@ -26,73 +29,76 @@ let toggled = false;
 export function toggleMode() {
   const toggles = [modeRefs.toggle, modeRefs.toggleMobile];
   const circles = [modeRefs.circle, modeRefs.circleMobile];
+
   toggles.forEach(toggle => {
-    if (toggle) {
-      toggle?.classList.toggle('toggled-btn');
-    }
+    toggle?.classList.toggle('toggled-btn');
   });
+
   circles.forEach(circle => {
-    if (circle) {
-      circle?.classList.toggle('toggled-circle');
-    }
+    circle?.classList.toggle('toggled-circle');
   });
 
   if (!toggled) {
-    modeRefs.bg.forEach(item => {
-      item.style.backgroundColor = colors.black;
-    });
-    modeRefs.bgSecondary.style.backgroundColor = colors.black;
-
-    [
-      modeRefs.text,
-      modeRefs.title,
-      modeRefs.semiTrText,
-      modeRefs.input,
-    ].forEach(group => {
-      group.forEach(item => {
-        item.style.color = colors.white;
-      });
-    });
-
-    modeRefs.input.forEach(item => {
-      item.style.backgroundColor = colors.gray;
-      item.style.borderColor = colors.white;
-    });
-
-    modeRefs.footer.style.backgroundColor = colors.black;
-    modeRefs.footer.style.borderColor = 'gray';
-    modeRefs.icon.style.stroke = colors.white;
+    toggleBackground(colors.black, colors.black);
+    toggleText(colors.white);
+    toggleTitles(colors.white);
+    toggleSemiTrText(colors.white);
+    toggleIcons(colors.white);
+    toggleInputs(colors.white, colors.gray, colors.white);
+    toggleFooter(colors.black, colors.darkGray);
 
     toggled = true;
   } else {
-    modeRefs.bg.forEach(item => {
-      item.style.backgroundColor = colors.bgColor;
-    });
-    modeRefs.bgSecondary.style.backgroundColor = colors.white;
-
-    [modeRefs.text, modeRefs.input].forEach(group => {
-      group.forEach(item => {
-        item.style.color = colors.black;
-      });
-    });
-
-    modeRefs.title.forEach(item => {
-      item.style.color = colors.green;
-    });
-
-    modeRefs.semiTrText.forEach(item => {
-      item.style.color = colors.semiTr;
-    });
-
-    modeRefs.input.forEach(item => {
-      item.style.backgroundColor = 'transparent';
-      item.style.borderColor = colors.semiTr;
-    });
-
-    modeRefs.footer.style.backgroundColor = colors.green;
-    modeRefs.footer.style.borderColor = 'transparent';
-    modeRefs.icon.style.stroke = colors.black;
+    toggleBackground(colors.bgColor, colors.white);
+    toggleText(colors.black);
+    toggleIcons(colors.black);
+    toggleTitles(colors.green);
+    toggleSemiTrText(colors.semiTr);
+    toggleInputs(colors.black, colors.white, colors.semiTr);
+    toggleFooter(colors.green, colors.transparent);
 
     toggled = false;
   }
+}
+
+function toggleBackground(color1, color2) {
+  modeRefs.bg.forEach(item => {
+    item.style.backgroundColor = color1;
+  });
+  modeRefs.bgSecondary.style.backgroundColor = color2;
+}
+
+function toggleText(color1, color2) {
+  modeRefs.text.forEach(item => {
+    item.style.color = color1;
+  });
+}
+
+function toggleTitles(color1, color2) {
+  modeRefs.title.forEach(item => {
+    item.style.color = color1;
+  });
+}
+
+function toggleSemiTrText(color1, color2) {
+  modeRefs.semiTrText.forEach(item => {
+    item.style.color = color1;
+  });
+}
+
+function toggleInputs(color1, color2, color3) {
+  modeRefs.input.forEach(item => {
+    item.style.color = color1;
+    item.style.backgroundColor = color2;
+    item.style.borderColor = color3;
+  });
+}
+
+function toggleIcons(color1, color2) {
+  modeRefs.icon.style.stroke = color1;
+}
+
+function toggleFooter(color1, color2) {
+  modeRefs.footer.style.backgroundColor = color1;
+  modeRefs.footer.style.borderColor = color2;
 }
