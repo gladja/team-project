@@ -1,11 +1,11 @@
 <div class="modal-backdrop">
-  <div class="modal mode-bg">
+  <div class="modal js-mode-bg">
     <button
       class="modal-close-btn"
       type="button"
       aria-label="Close modal window"
     >
-      <svg class="modal-close-icon mode-icon">
+      <svg class="modal-close-icon js-mode-icon">
         <use href="/img/sprite.svg#icon-close"></use>
       </svg>
     </button>
@@ -13,12 +13,12 @@
     <div class="modal-column">
       <form name="modal-form" class="modal-form">
         <div class="form-field" role="group" aria-labelledby="full-name">
-          <label class="form-label mode-text" id="full-name">
+          <label class="form-label js-mode-text" id="full-name">
             Full name
             <input
               type="text"
               name="name"
-              class="form-input mode-input"
+              class="form-input js-mode-input"
               placeholder="Enter your full name"
               pattern="[A-Za-z]{2,20} [A-Za-z]{2,20}"
               required
@@ -26,12 +26,12 @@
           </label>
         </div>
         <div class="form-field" role="group" aria-labelledby="email">
-          <label class="form-label mode-text" id="email">
+          <label class="form-label js-mode-text" id="email">
             Email
             <input
               type="email"
               name="email"
-              class="form-input mode-input"
+              class="form-input js-mode-input"
               placeholder="Enter your email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               required
@@ -39,12 +39,12 @@
           </label>
         </div>
         <div class="form-field" role="group" aria-labelledby="card-number">
-          <label class="form-label mode-text" id="card-number">
+          <label class="form-label js-mode-text" id="card-number">
             Card number
             <input
               type="text"
               name="card"
-              class="form-input mode-input"
+              class="form-input js-mode-input"
               placeholder="Enter card"
               pattern="[0-9]{16}"
               maxlength="16"
@@ -53,20 +53,20 @@
           </label>
         </div>
         <div class="form-field" role="group" aria-labelledby="comments">
-          <label class="form-label mode-text" id="comments">
+          <label class="form-label js-mode-text" id="comments">
             Comments
             <textarea
               name="comment"
-              class="form-input form-textarea mode-input"
+              class="form-input form-textarea js-mode-input"
               placeholder="Enter your text"
             ></textarea>
           </label>
         </div>
         <button class="modal-btn" type="submit">submit</button>
       </form>
-      <p class="catalog-price privacy-text mode-semi-tr">
+      <p class="catalog-price privacy-text js-mode-text">
         By clicking on “Submit” button, you agree to our
-        <a href="#" class="privacy-link mode-semi-tr">Privacy Policy</a>, and
+        <a href="#" class="privacy-link js-mode-text">Privacy Policy</a>, and
         allow Promodo to use this information for marketing purposes.
       </p>
     </div>

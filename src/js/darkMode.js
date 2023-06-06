@@ -3,28 +3,13 @@ export const modeRefs = {
   toggleMobile: document.querySelector('.mode-btn-mobile'),
   circle: document.querySelector('.btn-circle'),
   circleMobile: document.querySelector('.btn-circle-mobile'),
-  bg: document.querySelectorAll('.mode-bg'),
-  bgSecondary: document.querySelector('.mode-bg-secondary'),
-  text: document.querySelectorAll('.mode-text'),
-  title: document.querySelectorAll('.mode-title'),
-  semiTrText: document.querySelectorAll('.mode-semi-tr'),
-  icon: document.querySelector('.mode-icon'),
-  input: document.querySelectorAll('.mode-input'),
-  footer: document.querySelector('.mode-footer'),
+  backgrounds: document.querySelectorAll('.js-mode-bg'),
+  bgSecondary: document.querySelector('.js-mode-bg-secondary'),
+  texts: document.querySelectorAll('.js-mode-text'),
+  icon: document.querySelector('.js-mode-icon'),
+  inputs: document.querySelectorAll('.js-mode-input'),
+  footer: document.querySelector('.js-mode-footer'),
 };
-
-const colors = {
-  white: '#fff',
-  black: '#141414',
-  green: '#1e2827',
-  semiTr: 'rgba(20, 20, 20, .5)',
-  bgColor: '#fbfbfb',
-  gray: '#ffffff80',
-  darkGray: 'gray',
-  transparent: 'transparent',
-};
-
-let toggled = false;
 
 export function toggleMode() {
   const toggles = [modeRefs.toggle, modeRefs.toggleMobile];
@@ -38,67 +23,47 @@ export function toggleMode() {
     circle?.classList.toggle('toggled-circle');
   });
 
-  if (!toggled) {
-    toggleBackground(colors.black, colors.black);
-    toggleText(colors.white);
-    toggleTitles(colors.white);
-    toggleSemiTrText(colors.white);
-    toggleIcons(colors.white);
-    toggleInputs(colors.white, colors.gray, colors.white);
-    toggleFooter(colors.black, colors.darkGray);
-
-    toggled = true;
-  } else {
-    toggleBackground(colors.bgColor, colors.white);
-    toggleText(colors.black);
-    toggleIcons(colors.black);
-    toggleTitles(colors.green);
-    toggleSemiTrText(colors.semiTr);
-    toggleInputs(colors.black, colors.white, colors.semiTr);
-    toggleFooter(colors.green, colors.transparent);
-
-    toggled = false;
-  }
+  toggleBackground();
+  toggleText();
+  toggleInputs();
+  toggleIcons();
+  toggleFooter();
 }
 
-function toggleBackground(color1, color2) {
-  modeRefs.bg.forEach(item => {
-    item.style.backgroundColor = color1;
+function toggleBackground() {
+  const { backgrounds, bgSecondary } = modeRefs;
+
+  backgrounds.forEach(bg => {
+    bg.classList.toggle('darkmode-bg');
   });
-  modeRefs.bgSecondary.style.backgroundColor = color2;
+
+  bgSecondary?.classList.toggle('darkmode-bg');
 }
 
-function toggleText(color1, color2) {
-  modeRefs.text.forEach(item => {
-    item.style.color = color1;
+function toggleText() {
+  const { texts } = modeRefs;
+
+  texts.forEach(text => {
+    text.classList.toggle('darkmode-text');
   });
 }
 
-function toggleTitles(color1, color2) {
-  modeRefs.title.forEach(item => {
-    item.style.color = color1;
+function toggleInputs() {
+  const { inputs } = modeRefs;
+
+  inputs.forEach(input => {
+    input.classList.toggle('darkmode-input');
   });
 }
 
-function toggleSemiTrText(color1, color2) {
-  modeRefs.semiTrText.forEach(item => {
-    item.style.color = color1;
-  });
+function toggleIcons() {
+  const { icon } = modeRefs;
+
+  icon?.classList.toggle('darkmode-icon');
 }
 
-function toggleInputs(color1, color2, color3) {
-  modeRefs.input.forEach(item => {
-    item.style.color = color1;
-    item.style.backgroundColor = color2;
-    item.style.borderColor = color3;
-  });
-}
+function toggleFooter() {
+  const { footer } = modeRefs;
 
-function toggleIcons(color1, color2) {
-  modeRefs.icon.style.stroke = color1;
-}
-
-function toggleFooter(color1, color2) {
-  modeRefs.footer.style.backgroundColor = color1;
-  modeRefs.footer.style.borderColor = color2;
+  footer?.classList.toggle('darkmode-footer');
 }
