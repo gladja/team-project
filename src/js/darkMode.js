@@ -4,7 +4,6 @@ export const modeRefs = {
   circle: document.querySelector('.btn-circle'),
   circleMobile: document.querySelector('.btn-circle-mobile'),
   backgrounds: document.querySelectorAll('.js-mode-bg'),
-  bgSecondary: document.querySelector('.js-mode-bg-secondary'),
   texts: document.querySelectorAll('.js-mode-text'),
   icon: document.querySelector('.js-mode-icon'),
   inputs: document.querySelectorAll('.js-mode-input'),
@@ -31,13 +30,11 @@ export function toggleMode() {
 }
 
 function toggleBackground() {
-  const { backgrounds, bgSecondary } = modeRefs;
+  const { backgrounds } = modeRefs;
 
   backgrounds.forEach(bg => {
     bg.classList.toggle('darkmode-bg');
   });
-
-  bgSecondary?.classList.toggle('darkmode-bg');
 }
 
 function toggleText() {
