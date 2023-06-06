@@ -11,7 +11,9 @@ const { open, close, menu, links } = menuRefs;
 export function toggleMenu() {
   menu?.classList.toggle('menu-animation');
   body?.classList.toggle('overflow-hidden');
+}
 
+export function menuEventListeners() {
   links.forEach(link => {
     link.addEventListener('click', () => {
       menu?.classList.remove('menu-animation');

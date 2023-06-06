@@ -2,14 +2,25 @@ import '/js/swiper.js';
 import '/js/aos.js';
 import '/js/scroll.js';
 
-import { menuRefs, toggleMenu } from '/js/mobileMenu';
-menuRefs.open?.addEventListener('click', toggleMenu);
-menuRefs.close?.addEventListener('click', toggleMenu);
+import { menuRefs, toggleMenu, menuEventListeners } from '/js/mobileMenu';
+
+const { open: menuOpen, close: menuClose } = menuRefs;
+
+menuEventListeners();
+
+menuOpen?.addEventListener('click', toggleMenu);
+menuClose?.addEventListener('click', toggleMenu);
 
 import { modalRefs, toggleModal, catalogEventListener } from '/js/modal';
+
+const { modalClose } = modalRefs;
+
 catalogEventListener();
-modalRefs.close?.addEventListener('click', toggleModal);
+modalClose?.addEventListener('click', toggleModal);
 
 import { modeRefs, toggleMode } from '/js/darkMode';
-modeRefs.toggle.addEventListener('click', toggleMode);
-modeRefs.toggleMobile.addEventListener('click', toggleMode);
+
+const { toggle, toggleMobile } = modeRefs;
+
+toggle.addEventListener('click', toggleMode);
+toggleMobile.addEventListener('click', toggleMode);
