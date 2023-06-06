@@ -6,15 +6,7 @@ export const modalRefs = {
   column: document.querySelector('.first-column'),
 };
 
-const { open, close, backdrop, modal, column } = modalRefs;
-
-export const catalogRefs = {
-  list: document.querySelector('.catalog-list'),
-  items: document.querySelectorAll('.catalog-item'),
-  requireText: document.querySelector('.catalog-require'),
-};
-
-const { list, items, requireText } = catalogRefs;
+const selectedItem = document.createElement('div');
 
 function addHeart(e) {
   const selectedHeart = e.target
@@ -36,9 +28,9 @@ function addHeart(e) {
   }
 }
 
-const selectedItem = document.createElement('div');
-
 function selectItem(item) {
+  const { open, column } = modalRefs;
+
   selectedItem.innerHTML = item.innerHTML;
   selectedItem.classList.add('added-watch');
   column.innerHTML = '';
@@ -66,6 +58,8 @@ function restyleSelectedItem() {
 }
 
 export function toggleModal() {
+  const { backdrop, modal } = modalRefs;
+
   backdrop?.classList.toggle('backdrop-animation');
   modal?.classList.toggle('modal-animation');
 }
@@ -79,6 +73,4 @@ export function catalogEventListener() {
       addHeart(e);
     });
   });
-
-  open?.addEventListener('click', toggleModal);
 }

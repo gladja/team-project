@@ -13,9 +13,10 @@ menuClose?.addEventListener('click', toggleMenu);
 
 import { modalRefs, toggleModal, catalogEventListener } from '/js/modal';
 
-const { modalClose } = modalRefs;
+const { open: modalOpen, close: modalClose } = modalRefs;
 
 catalogEventListener();
+modalOpen.addEventListener('click', toggleModal);
 modalClose?.addEventListener('click', toggleModal);
 
 import { modeRefs, toggleMode } from '/js/darkMode';
