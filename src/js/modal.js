@@ -6,11 +6,15 @@ export const modalRefs = {
   column: document.querySelector('.first-column'),
 };
 
+const { open, close, backdrop, modal, column } = modalRefs;
+
 export const catalogRefs = {
   list: document.querySelector('.catalog-list'),
   items: document.querySelectorAll('.catalog-item'),
   requireText: document.querySelector('.catalog-require'),
 };
+
+const { list, items, requireText } = catalogRefs;
 
 function addHeart(e) {
   const selectedHeart = e.target
@@ -37,12 +41,12 @@ const selectedItem = document.createElement('div');
 function selectItem(item) {
   selectedItem.innerHTML = item.innerHTML;
   selectedItem.classList.add('added-watch');
-  modalRefs.column.innerHTML = '';
-  modalRefs.column.appendChild(selectedItem);
+  column.innerHTML = '';
+  column.appendChild(selectedItem);
 
   restyleSelectedItem();
 
-  modalRefs.open?.removeAttribute('disabled');
+  open?.removeAttribute('disabled');
 }
 
 function restyleSelectedItem() {
@@ -53,19 +57,22 @@ function restyleSelectedItem() {
     text: selectedItem.querySelector('.catalog-description'),
   };
 
-  selectedItemRefs.content.style.marginTop = '40px';
-  selectedItemRefs.thumb.style.padding = '26px 0';
-  selectedItemRefs.heart.style.display = 'none';
-  selectedItemRefs.text.style.maxWidth = '276px';
+  const { content, thumb, heart, text } = selectedItemRefs;
+
+  content.style.marginTop = '40px';
+  thumb.style.padding = '26px 0';
+  heart.style.display = 'none';
+  text.style.maxWidth = '276px';
 }
 
 export function toggleModal() {
-  modalRefs.backdrop?.classList.toggle('backdrop-animation');
-  modalRefs.modal?.classList.toggle('modal-animation');
+  backdrop?.classList.toggle('backdrop-animation');
+  modal?.classList.toggle('modal-animation');
 }
 
 export function catalogEventListener() {
   const items = document.querySelectorAll('.catalog-item');
+
   items.forEach(item => {
     item.addEventListener('click', e => {
       selectItem(item);
@@ -73,5 +80,5 @@ export function catalogEventListener() {
     });
   });
 
-  modalRefs.open?.addEventListener('click', toggleModal);
+  open?.addEventListener('click', toggleModal);
 }
