@@ -8,7 +8,7 @@ export const modalRefs = {
 
 const selectedItem = document.createElement('div');
 
-function addHeart(e) {
+const addHeart = e => {
   const selectedHeart = e.target
     .closest('.catalog-item')
     .querySelector('.catalog-heart');
@@ -26,9 +26,9 @@ function addHeart(e) {
       }
     });
   }
-}
+};
 
-function selectItem(item) {
+const selectItem = item => {
   const { open, column } = modalRefs;
 
   selectedItem.innerHTML = item.innerHTML;
@@ -39,9 +39,9 @@ function selectItem(item) {
   restyleSelectedItem();
 
   open?.removeAttribute('disabled');
-}
+};
 
-function restyleSelectedItem() {
+const restyleSelectedItem = () => {
   const selectedItemRefs = {
     content: selectedItem.querySelector('.catalog-content'),
     thumb: selectedItem.querySelector('.catalog-thumb'),
@@ -55,16 +55,16 @@ function restyleSelectedItem() {
   thumb.style.padding = '26px 0';
   heart.style.display = 'none';
   text.style.maxWidth = '276px';
-}
+};
 
-export function toggleModal() {
+export const toggleModal = () => {
   const { backdrop, modal } = modalRefs;
 
   backdrop?.classList.toggle('backdrop-animation');
   modal?.classList.toggle('modal-animation');
-}
+};
 
-export function catalogEventListener() {
+export const catalogEventListener = () => {
   const items = document.querySelectorAll('.catalog-item');
 
   items.forEach(item => {
@@ -73,4 +73,4 @@ export function catalogEventListener() {
       addHeart(e);
     });
   });
-}
+};

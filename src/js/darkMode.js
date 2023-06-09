@@ -10,7 +10,7 @@ export const modeRefs = {
   footer: document.querySelector('.js-mode-footer'),
 };
 
-export function toggleMode() {
+export const toggleMode = () => {
   const toggles = [modeRefs.toggle, modeRefs.toggleMobile];
   const circles = [modeRefs.circle, modeRefs.circleMobile];
 
@@ -27,7 +27,7 @@ export function toggleMode() {
   toggleInputs();
   toggleIcons();
   toggleFooter();
-}
+};
 
 const toggleBackground = ({ backgrounds } = modeRefs) => {
   backgrounds.forEach(bg => {
