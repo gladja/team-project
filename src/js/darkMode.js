@@ -10,25 +10,6 @@ export const modeRefs = {
   footer: document.querySelector('.js-mode-footer'),
 };
 
-export const toggleMode = () => {
-  const toggles = [modeRefs.toggle, modeRefs.toggleMobile];
-  const circles = [modeRefs.circle, modeRefs.circleMobile];
-
-  toggles.forEach(toggle => {
-    toggle?.classList.toggle('toggled-btn');
-  });
-
-  circles.forEach(circle => {
-    circle?.classList.toggle('toggled-circle');
-  });
-
-  toggleBackground();
-  toggleText();
-  toggleInputs();
-  toggleIcons();
-  toggleFooter();
-};
-
 const toggleBackground = ({ backgrounds } = modeRefs) => {
   backgrounds.forEach(bg => {
     bg.classList.toggle('darkmode-bg');
@@ -53,4 +34,23 @@ const toggleIcons = ({ icon } = modeRefs) => {
 
 const toggleFooter = ({ footer } = modeRefs) => {
   footer?.classList.toggle('darkmode-footer');
+};
+
+export const toggleMode = () => {
+  const toggles = [modeRefs.toggle, modeRefs.toggleMobile];
+  const circles = [modeRefs.circle, modeRefs.circleMobile];
+
+  toggles.forEach(toggle => {
+    toggle?.classList.toggle('toggled-btn');
+  });
+
+  circles.forEach(circle => {
+    circle?.classList.toggle('toggled-circle');
+  });
+
+  toggleBackground();
+  toggleText();
+  toggleInputs();
+  toggleIcons();
+  toggleFooter();
 };

@@ -28,19 +28,6 @@ const addHeart = e => {
   }
 };
 
-const selectItem = item => {
-  const { open, column } = modalRefs;
-
-  selectedItem.innerHTML = item.innerHTML;
-  selectedItem.classList.add('added-watch');
-  column.innerHTML = '';
-  column.appendChild(selectedItem);
-
-  restyleSelectedItem();
-
-  open?.removeAttribute('disabled');
-};
-
 const restyleSelectedItem = () => {
   const selectedItemRefs = {
     content: selectedItem.querySelector('.catalog-content'),
@@ -55,6 +42,19 @@ const restyleSelectedItem = () => {
   thumb.style.padding = '26px 0';
   heart.style.display = 'none';
   text.style.maxWidth = '276px';
+};
+
+const selectItem = item => {
+  const { open, column } = modalRefs;
+
+  selectedItem.innerHTML = item.innerHTML;
+  selectedItem.classList.add('added-watch');
+  column.innerHTML = '';
+  column.appendChild(selectedItem);
+
+  restyleSelectedItem();
+
+  open?.removeAttribute('disabled');
 };
 
 export const toggleModal = () => {
