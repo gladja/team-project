@@ -29,38 +29,28 @@ export function toggleMode() {
   toggleFooter();
 }
 
-function toggleBackground() {
-  const { backgrounds } = modeRefs;
-
+const toggleBackground = ({ backgrounds } = modeRefs) => {
   backgrounds.forEach(bg => {
     bg.classList.toggle('darkmode-bg');
   });
-}
+};
 
-function toggleText() {
-  const { texts } = modeRefs;
-
+const toggleText = ({ texts } = modeRefs) => {
   texts.forEach(text => {
     text.classList.toggle('darkmode-text');
   });
-}
+};
 
-function toggleInputs() {
-  const { inputs } = modeRefs;
-
+const toggleInputs = ({ inputs } = modeRefs) => {
   inputs.forEach(input => {
     input.classList.toggle('darkmode-input');
   });
-}
+};
 
-function toggleIcons() {
-  const { icon } = modeRefs;
-
+const toggleIcons = ({ icon } = modeRefs) => {
   icon?.classList.toggle('darkmode-icon');
-}
+};
 
-function toggleFooter() {
-  const { footer } = modeRefs;
-
+const toggleFooter = ({ footer } = modeRefs) => {
   footer?.classList.toggle('darkmode-footer');
-}
+};
