@@ -126,6 +126,7 @@
   -moz-transform: translate(20%, -50%);
   -ms-transform: translate(20%, -50%);
   -o-transform: translate(20%, -50%);
+  z-index: 2;
 }
 
 .mode-btn-mobile {
@@ -151,6 +152,7 @@
   position: absolute;
   top: 50%;
   left: 0;
+  z-index: 2;
 
   display: block;
   width: 10px;
@@ -251,4 +253,60 @@
 .toggled-btn {
   border-color: var(--color-white);
   background-color: var(--color-black);
+}
+
+.moon-icon {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  stroke: var(--color-black);
+  fill: transparent;
+}
+
+.sun-icon {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 10%;
+  transform:translateY(-50%);
+  -webkit-transform:translateY(-50%);
+  -moz-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  -o-transform:translateY(-50%);
+  stroke: var(--color-white);
+  fill: var(--color-white);
+}
+
+.moon-icon-mobile {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  stroke: var(--color-black);
+  fill: transparent;
+}
+
+.sun-icon-mobile {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  stroke: var(--color-white);
+  fill: var(--color-white);
 }
