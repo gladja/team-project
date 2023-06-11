@@ -6,13 +6,18 @@ export const menuRefs = {
 };
 const body = document.body;
 
-export function toggleMenu() {
-  menuRefs.menu?.classList.toggle('menu-animation');
+const { open, close, menu, links } = menuRefs;
+
+export const toggleMenu = () => {
+  menu?.classList.toggle('menu-animation');
   body?.classList.toggle('overflow-hidden');
-  menuRefs.links?.forEach(link => {
+};
+
+export const menuEventListeners = () => {
+  links.forEach(link => {
     link.addEventListener('click', () => {
-      menuRefs.menu?.classList.remove('menu-animation');
+      menu?.classList.remove('menu-animation');
       body?.classList.remove('overflow-hidden');
     });
   });
-}
+};

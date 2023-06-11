@@ -6,18 +6,16 @@ export const modalRefs = {
   column: document.querySelector('.first-column'),
 };
 
-export const catalogRefs = {
-  list: document.querySelector('.catalog-list'),
-  items: document.querySelectorAll('.catalog-item'),
-  requireText: document.querySelector('.catalog-require'),
-};
+const selectedItem = document.createElement('div');
 
-function addToFav(e) {
+const addHeart = e => {
   const selectedHeart = e.target
     .closest('.catalog-item')
     .querySelector('.catalog-heart');
+
   if (selectedHeart) {
     const hearts = document.querySelectorAll('.catalog-heart');
+
     hearts.forEach(heart => {
       if (heart === selectedHeart) {
         heart.classList.add('selected-heart');
@@ -28,38 +26,51 @@ function addToFav(e) {
       }
     });
   }
-}
+};
 
-function selectItem(item) {
-  const selectedItem = document.createElement('div');
+const restyleSelectedItem = () => {
+  const selectedItemRefs = {
+    content: selectedItem.querySelector('.catalog-content'),
+    thumb: selectedItem.querySelector('.catalog-thumb'),
+    heart: selectedItem.querySelector('.catalog-heart'),
+    text: selectedItem.querySelector('.catalog-description'),
+  };
+
+  const { content, thumb, heart, text } = selectedItemRefs;
+
+  content.style.marginTop = '40px';
+  thumb.style.padding = '26px 0';
+  heart.style.display = 'none';
+  text.style.maxWidth = '276px';
+};
+
+const selectItem = item => {
+  const { open, column } = modalRefs;
+
   selectedItem.innerHTML = item.innerHTML;
   selectedItem.classList.add('added-watch');
-  modalRefs.column.innerHTML = '';
-  modalRefs.column.appendChild(selectedItem);
+  column.innerHTML = '';
+  column.appendChild(selectedItem);
 
-  const itemContent = selectedItem.querySelector('.catalog-content');
-  const itemThumb = selectedItem.querySelector('.catalog-thumb');
-  const itemHeart = selectedItem.querySelector('.catalog-heart');
-  itemThumb.style.padding = '26px 0';
-  itemContent.style.marginTop = '40px';
-  itemHeart.style.display = 'none';
+  restyleSelectedItem();
 
-  modalRefs.open?.removeAttribute('disabled');
-}
+  open?.removeAttribute('disabled');
+};
 
-export function toggleModal() {
-  modalRefs.backdrop?.classList.toggle('backdrop-animation');
-  modalRefs.modal?.classList.toggle('modal-animation');
-}
+export const toggleModal = () => {
+  const { backdrop, modal } = modalRefs;
 
-export function addEventListener() {
+  backdrop?.classList.toggle('backdrop-animation');
+  modal?.classList.toggle('modal-animation');
+};
+
+export const catalogEventListener = () => {
   const items = document.querySelectorAll('.catalog-item');
+
   items.forEach(item => {
     item.addEventListener('click', e => {
       selectItem(item);
-      addToFav(e);
+      addHeart(e);
     });
   });
-
-  modalRefs.open?.addEventListener('click', toggleModal);
-}
+};

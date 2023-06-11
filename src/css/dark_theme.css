@@ -1,0 +1,33 @@
+.darkmode-bg {
+  background-color: var(--color-black) !important;
+}
+
+.darkmode-text {
+  color: var(--color-darkmode);
+}
+
+.darkmode-input {
+  color: var(--color-darkmode);
+  background-color: var(--color-card);
+  border-color: var(--color-darkmode);
+}
+
+.darkmode-icon {
+  stroke: var(--color-darkmode);
+}
+
+.darkmode-footer {
+  background-color: var(--color-black);
+  border-color: var(--color-darkmode);
+}
+
+.js-mode-bg,
+.js-mode-bg-secondary,
+.js-mode-semi-tr,
+.js-mode-footer,
+.js-mode-icon,
+.js-mode-input,
+.js-mode-title,
+.js-mode-text {
+  transition-duration: 600ms;
+}

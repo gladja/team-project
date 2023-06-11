@@ -2,18 +2,26 @@ import '/js/swiper.js';
 import '/js/aos.js';
 import '/js/scroll.js';
 
-import { menuRefs } from '/js/mobileMenu';
-import { toggleMenu } from '/js/mobileMenu';
-menuRefs.open?.addEventListener('click', toggleMenu);
-menuRefs.close?.addEventListener('click', toggleMenu);
+import { menuRefs, toggleMenu, menuEventListeners } from '/js/mobileMenu';
 
-import { modalRefs } from '/js/modal';
-import { toggleModal } from '/js/modal';
-import { addEventListener } from '/js/modal';
-addEventListener();
-modalRefs.close?.addEventListener('click', toggleModal);
+const { open: menuOpen, close: menuClose } = menuRefs;
 
-import { modeRefs } from '/js/darkMode';
-import { toggleMode } from '/js/darkMode';
-modeRefs.toggle.addEventListener('click', toggleMode);
-modeRefs.toggleMobile.addEventListener('click', toggleMode);
+menuEventListeners();
+
+menuOpen?.addEventListener('click', toggleMenu);
+menuClose?.addEventListener('click', toggleMenu);
+
+import { modalRefs, toggleModal, catalogEventListener } from '/js/modal';
+
+const { open: modalOpen, close: modalClose } = modalRefs;
+
+catalogEventListener();
+modalOpen.addEventListener('click', toggleModal);
+modalClose?.addEventListener('click', toggleModal);
+
+import { modeRefs, toggleMode } from '/js/darkMode';
+
+const { toggle, toggleMobile } = modeRefs;
+
+toggle.addEventListener('click', toggleMode);
+toggleMobile.addEventListener('click', toggleMode);

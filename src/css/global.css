@@ -8,6 +8,7 @@
   --color-card: #ffffff80; /* rgba(255, 255, 255, 0.5);*/
   --color-border: #ffffff1a; /* rgba(255, 255, 255, 0.1);*/
   --color-copyright: #c6cdd1;
+  --color-darkmode: #D9D9D9;
 }
 
 html {
@@ -80,12 +81,3 @@ body {
   }
 }
 
-.mode-bg,
-.mode-bg-secondary,
-.mode-text,
-.mode-title,
-.mode-semi-tr,
-.mode-icon,
-.mode-footer {
-  transition-duration: 300ms;
-}
